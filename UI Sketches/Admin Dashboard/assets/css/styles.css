@@ -81,8 +81,15 @@
   transition: 0.5s;
 }
 
+.NavItemImage-nonActive {
+  margin-top: 21%;
+  pointer-events: none;
+}
+
 .NavItemImage {
   margin-top: 21%;
+  filter: invert(100%);
+  pointer-events: none;
 }
 
 .imageInvert {
@@ -95,19 +102,45 @@
 
 .NavItemBg {
   background-image: radial-gradient(farthest-corner at -20% 110%,#2F94FC,#2FB1FF);
+  color: white;
+}
+
+.NavItemBg-nonActive:hover {
+  background-color: #2FB1FF;
+}
+
+.NavItemBg-nonActive {
+  transition: all 0.2s ease;
+}
+
+.NavItemText-nonActive {
+  font-size: 9px;
+  margin-top: 5px;
+  pointer-events: none;
 }
 
 .NavItemText {
   font-size: 9px;
   margin-top: 5px;
+  color: white;
+  pointer-events: none;
+}
+
+.WidgetGray:hover {
+  box-shadow: 0 8px 16px 0 rgba(172,240,249,0.11), 0 8px 16px 0 rgba(0,102,255,0.1);
 }
 
 .WidgetGray {
   background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
   margin: 10px;
   border-radius: 15px;
-  box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.1), 0 8px 16px 0 rgba(10, 10, 10, 0.1);
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
   height: 137px;
+  transition: all 0.2s ease;
+}
+
+.WidgetTotal:hover {
+  box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.1), 0 8px 16px 0 rgba(29,173,255,0.39);
 }
 
 .WidgetTotal {
@@ -116,6 +149,7 @@
   border-radius: 15px;
   box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.1), 0 8px 16px 0 rgba(10, 10, 10, 0.1);
   height: 137px;
+  transition: all 0.2s ease;
 }
 
 .WidgetTitleSmall {
@@ -143,12 +177,26 @@
   display: block;
 }
 
-.listItemBg {
-  background-image: radial-gradient(farthest-side at -10% 10%, #2FB1FF, #3BCCF9);
+.listItemBg-selected {
+  background-color: #2FB1FF;
   height: 100%;
   border-radius: 10px;
   background-size: auto 400px;
   background-repeat: no-repeat;
+}
+
+.listItemBg:hover {
+  background-color: #2FB1FF;
+  box-shadow: 0px 0px 20px 1px rgba(160,160,160,0.68);
+}
+
+.listItemBg {
+  background-color: #eaeaea;
+  height: 100%;
+  border-radius: 10px;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease;
 }
 
 .showAll {
@@ -166,5 +214,60 @@
 .showAll:hover {
   background-color: #3BCCF9;
   color: white;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  font-style: normal!important;
+  color: #2B2B2B!important;
+}
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  color: #2B2B2B;
+}
+
+.receptionist {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #69D6C5;
+}
+
+.FullListItem {
+  margin-top: 10px;
+  border-radius: 10px !important;
+  transition: all 0.5s ease;
+}
+
+.listHead {
+  margin-left: 5px;
+  color: #2B2B2B;
+  text-align: left;
+}
+
+.listHeader {
+  color: #2B2B2B;
+}
+
+.FullListItem-selected {
+  background-color: #2FB1FF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(160,160,160,0.68);
+  transition: all 0.5s ease;
+}
+
+.FullListItem:hover {
+  background-color: #2FB1FF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(112,112,112,0.3);
+  color: white;
+}
+
+.FullListItem {
+  border-radius: 10px;
 }
 
