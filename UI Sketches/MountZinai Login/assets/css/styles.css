@@ -1,0 +1,89 @@
+.login-card {
+  width: 36rem;
+  height: 35rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.logo-image {
+  display: block;
+  margin-left: 8rem;
+  padding-top: 2rem;
+}
+
+.email-input {
+  width: 23rem;
+  height: 3rem;
+  background-color: #D3DDE2;
+  border: none;
+  margin-left: 10px;
+  outline: none;
+}
+
+.div-bottom {
+  border-bottom: 2px solid #707070;
+  margin-left: 50px;
+}
+
+.email-field {
+  margin-top: 50px;
+}
+
+.password-input {
+  width: 23rem;
+  height: 3rem;
+  background-color: #D3DDE2;
+  border: none;
+  margin-left: 10px;
+  outline: none;
+}
+
+.password-field {
+  margin-top: 33px;
+}
+
+.remember-check {
+  margin-top: 25px;
+  margin-left: 6.5rem;
+  display: inline-flex;
+}
+
+#formCheck-1 {
+}
+
+#remember-me-chck {
+  width: 37px;
+  height: 22px;
+  margin-left: -2.6rem;
+  background-color: #D3DDE2;
+}
+
+.remember-me-lbl {
+  margin-top: -1px;
+  color: #696D70;
+}
+
+#forget-pass-link {
+  margin-left: 10rem;
+  color: #696D70;
+}
+
+.remember-me-inline {
+  margin-top: 10px;
+}
+
+.login-btn-position {
+  text-align: center;
+  width: 33rem;
+  height: 10rem;
+  padding: 58px;
+}
+
+#login-btn {
+  width: 12rem;
+  height: 3rem;
+  border-radius: 23px;
+}
+
