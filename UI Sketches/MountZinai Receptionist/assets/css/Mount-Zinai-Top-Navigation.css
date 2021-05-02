@@ -1,0 +1,443 @@
+#topNav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo {
+  height: 60px;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+#greetingText {
+  font-size: 24px;
+  margin: auto;
+  margin-left: 5vw;
+}
+
+#userImage {
+  right: 0;
+  margin-right: 3vw;
+  width: 45px;
+}
+
+#notificationIcon {
+  width: 37px;
+  margin-right: 4vw;
+}
+
+.container-fluid.container-size {
+  width: 100%;
+  height: 100%;
+}
+
+.col.total-patient {
+  height: 83vh;
+}
+
+.row.row1 {
+  height: 50%;
+  background-color: #2FAFFF;
+  border-radius: 35px;
+}
+
+.mid-column {
+  height: 50%;
+  display: block;
+}
+
+.all-patient {
+  width: 22vw;
+  background-color: #2FAFFF;
+  height: 50%;
+  border-radius: 20px;
+}
+
+.add-patient {
+  width: 22vw;
+  background-color: #2FAFFF;
+  height: 50%;
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.find-patient {
+  background-color: #2FAFFF;
+  height: 86%;
+  border-radius: 20px;
+  position: relative;
+  top: 24px;
+  right: 24vw;
+  width: 208%;
+}
+
+.total-patients-wrap {
+  position: relative;
+  top: 7vh;
+  left: 4vw;
+}
+
+.patients-lbl {
+  position: relative;
+  top: 6vh;
+  left: 7vw;
+}
+
+.all-text-lbl {
+  position: relative;
+  left: 3vw;
+  top: 1vw;
+}
+
+.patients-text-lbl {
+  position: relative;
+  left: 2vw;
+}
+
+.all-patients-icon {
+  width: 5vw;
+  position: relative;
+  bottom: 12vh;
+  left: 14vw;
+}
+
+.add-text-lbl {
+  position: relative;
+  left: 2vw;
+  top: 1vw;
+}
+
+.search-field {
+  position: relative;
+  left: 5vw;
+  top: 2vh;
+}
+
+.form-control-lg.search-field-length {
+  border: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.form-control-lg.search-field-length input {
+  width: 41px;
+}
+
+.user-name-new {
+  width: 37px;
+  position: relative;
+  bottom: 4vh;
+  left: 6vw;
+}
+
+.search-icon {
+  width: 30px;
+  position: relative;
+  bottom: 8vh;
+  left: 27vw;
+}
+
+.row.admit-patients-row {
+  height: 24%;
+  background-color: #2FAFFF;
+  border-radius: 35px;
+}
+
+.admitted-patients-lbl {
+  font-size: 29px;
+  color: rgb(255,255,255);
+}
+
+.admitted-patients-wrap {
+  position: relative;
+  top: 2vh;
+  left: 3vw;
+}
+
+.admit-lbl {
+  color: rgb(255,255,255);
+  font-size: 64px;
+}
+
+.admit-patients-lbl {
+  position: relative;
+  top: 0vh;
+  left: 8vw;
+}
+
+.discharge-text-lbl {
+  position: relative;
+  left: 0vw;
+  top: 1vw;
+}
+
+.discharge-text {
+  font-size: 37px;
+  color: rgb(255,255,255);
+  text-align: left;
+}
+
+.patient-text-lbl {
+  position: relative;
+  left: 2vw;
+  top: 0vh;
+}
+
+.row.discharge-patients-row {
+  height: 25%;
+  background-color: #2FAFFF;
+  border-radius: 35px;
+  position: relative;
+  top: 1vh;
+}
+
+.discharge-icon {
+  width: 78px;
+  position: relative;
+  top: -9vh;
+  left: 16vw;
+}
+
+.discharge-patient-icon {
+  height: 30px;
+}
+
+.admit-text-lbl {
+  position: relative;
+  left: 2vw;
+  top: 1vw;
+}
+
+.admit-text {
+  font-size: 50px;
+  color: rgb(255,255,255);
+  text-align: left;
+}
+
+.admit-patient-text-lbl {
+  position: relative;
+  left: 3vw;
+}
+
+.name-lbl {
+  position: relative;
+  left: 7vw;
+}
+
+.descriptive-lbl {
+  display: flex;
+  position: relative;
+  top: 1vh;
+}
+
+.nic-lbl {
+}
+
+.nic-lbl {
+  position: relative;
+  left: 22vw;
+}
+
+.find-doctor {
+  background-color: #2FAFFF;
+  height: 76%;
+  border-radius: 20px;
+  position: relative;
+  top: 9px;
+  right: 2vw;
+  width: 98%;
+}
+
+.find-text-lbl {
+  position: relative;
+  left: 2vw;
+  top: 1vw;
+}
+
+.doctor-text-lbl {
+  position: relative;
+  left: 2vw;
+}
+
+.search-field-doc {
+  position: relative;
+  left: 5vw;
+  top: 2vh;
+}
+
+.mid-column-doc {
+  height: 50%;
+  display: block;
+}
+
+.session-directory {
+  width: 22vw;
+  background-color: #2FAFFF;
+  height: 48%;
+  border-radius: 20px;
+  position: relative;
+  left: -2vw;
+  bottom: 5vh;
+}
+
+.session-text {
+  position: relative;
+  left: 4vw;
+  top: 2vw;
+}
+
+.directory-lbl {
+  position: relative;
+  left: 6vw;
+  top: 2vh;
+}
+
+.session-directory-icon {
+  width: 5vw;
+  position: relative;
+  bottom: -5vh;
+  left: 9vw;
+}
+
+.bottom-card {
+  display: flex;
+  height: 102%;
+}
+
+.all-doctors {
+  width: 22vw;
+  background-color: #2FAFFF;
+  height: 48%;
+  border-radius: 20px;
+  position: relative;
+  left: -1vw;
+  bottom: 5vh;
+}
+
+.all-text-doc {
+  position: relative;
+  left: 8vw;
+  top: 1vw;
+}
+
+.doctors-lbl {
+  position: relative;
+  left: 7vw;
+  top: 1vh;
+}
+
+.all-doctos-icon {
+  width: 8vw;
+  position: relative;
+  bottom: -4vh;
+  left: 7vw;
+}
+
+.name-lbl-doc {
+  position: relative;
+  left: 6vw;
+}
+
+.doc-status {
+  position: relative;
+  left: 15vw;
+}
+
+.room-no {
+  position: relative;
+  left: 6vw;
+}
+
+.doc-num {
+  position: relative;
+  left: 19vw;
+}
+
+.add-text-lbl-mr {
+  position: relative;
+  left: 2vw;
+  top: 3vw;
+}
+
+.report-text-lbl {
+  position: relative;
+  left: 2vw;
+  top: 3vh;
+}
+
+.add-patients-icon {
+  width: 7vw;
+  position: relative;
+  bottom: -1vh;
+  left: 13vw;
+}
+
+.name-report {
+  height: 100%;
+  width: 88%;
+}
+
+.WidgetGray.document-card-bg {
+  height: 95%;
+  position: absolute;
+  width: 110%;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.name-lbl-mr {
+  position: relative;
+  left: 6vw;
+}
+
+.mr-date {
+  position: relative;
+  left: 17vw;
+}
+
+.uploaded-by {
+  position: relative;
+  left: 23vw;
+}
+
+.uploader {
+  height: 100%;
+  margin-right: 15px;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  left: 2vw;
+}
+
+.date-report {
+  height: 100%;
+  width: 72%;
+  position: relative;
+  left: 5vw;
+}
+
+.toggle-status {
+  position: relative;
+  left: 6vw;
+}
+
+.btn.btn-primary.appointment-btn {
+}
+
+.btn.btn-primary.appointment-btn {
+  width: 14vw;
+  height: 6vh;
+  position: relative;
+  top: 2vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: -1vw;
+}
+
