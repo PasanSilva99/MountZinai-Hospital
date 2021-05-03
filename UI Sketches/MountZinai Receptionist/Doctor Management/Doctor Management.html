@@ -5,18 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>MountZinai Receptionist Dashboard</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Mount-Zinai-Top-Navigation.css">
-    <link rel="stylesheet" href="assets/css/Side-Navigation--Page.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/All-Patient-Component.css">
+    <link rel="stylesheet" href="../assets/css/Back-Btn.css">
+    <link rel="stylesheet" href="../assets/css/Doctor-Add.css">
+    <link rel="stylesheet" href="../assets/css/Edit-btn.css">
+    <link rel="stylesheet" href="../assets/css/Mount-Zinai-Top-Navigation.css">
+    <link rel="stylesheet" href="../assets/css/Side-Navigation--Page.css">
+    <link rel="stylesheet" href="../assets/css/Staff-List-View.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/Toggle-Switch.css">
 </head>
 
 <body>
     <!-- Start: Mount Zinai Top Navigation -->
     <section>
         <div id="topNav">
-            <div><img class="img-fluid" id="logo" src="assets/img/MountZinai%20Hospital%20Logo.png"></div><span id="greetingText" style="font-size: 31px;">Hello A.S.D Silva</span>
+            <div><img class="img-fluid" id="logo" src="../assets/img/MountZinai%20Hospital%20Logo.png"></div><span id="greetingText" style="font-size: 31px;">Hello A.S.D Silva</span>
             <div class="d-inline-flex float-left justify-content-start card-position">
                 <!-- Start: Date Card -->
                 <div class="text-center shadow date-card" style="box-shadow: 2px 10px 2px 2px;background: radial-gradient(#3bccf9, #2fb1ff);">
@@ -30,7 +35,7 @@
                     <!-- Start: Time Content -->
                     <div class="date-position"><label class="text-center text-white" style="font-size: 35px;">07<sub style="font-size: 14.75px;">35</sub></label></div><!-- End: Time Content -->
                 </div><!-- End: Time Card -->
-            </div><img class="img-fluid" id="notificationIcon" src="assets/img/bell.svg"><img class="img-fluid" id="userImage" src="assets/img/receptionist.svg">
+            </div><img class="img-fluid" id="notificationIcon" src="../assets/img/bell.svg"><img class="img-fluid" id="userImage" src="../assets/img/receptionist.svg">
         </div>
     </section><!-- End: Mount Zinai Top Navigation -->
     <!-- Start: Side Navigation + Page -->
@@ -38,30 +43,30 @@
         <div class="fillPage">
             <div id="sideNav">
                 <div class="navItem">
-                    <div class="NavItemBg" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage" style="width: 35px;height: 35px;margin-left: 28%;margin-right: auto;position: relative;" src="assets/img/dashboard.svg"><span class="NavItemText" style="width: 100%;text-align: center;display: block;position: relative;">Dashboard</span>
+                    <div class="NavItemBg" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage" style="width: 35px;height: 35px;margin-left: 28%;margin-right: auto;position: relative;" src="../assets/img/dashboard.svg"><span class="NavItemText" style="width: 100%;text-align: center;display: block;position: relative;">Dashboard</span>
                 </div>
                 <div class="navItem">
-                    <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 30%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/add%20Appointment.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Appointment<br>Management</span>
-                </div>
-                <div class="navItem">
-                    <div style="position: absolute;width: 100%;height: 100%;">
-                        <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div>
-                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 33%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/patient.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Patient<br>Management</span>
+                    <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 30%;margin-right: auto;position: relative;margin-top: 12%;" src="../assets/img/add%20Appointment.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Appointment<br>Management</span>
                 </div>
                 <div class="navItem">
                     <div style="position: absolute;width: 100%;height: 100%;">
                         <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div>
-                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 29%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/blood-transfusion.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Admit<br>Patient</span>
+                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 33%;margin-right: auto;position: relative;margin-top: 12%;" src="../assets/img/patient.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Patient<br>Management</span>
                 </div>
                 <div class="navItem">
                     <div style="position: absolute;width: 100%;height: 100%;">
                         <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div>
-                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 29%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/doctor.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Doctor<br>Management</span>
+                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 29%;margin-right: auto;position: relative;margin-top: 12%;" src="../assets/img/blood-transfusion.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Admit<br>Patient</span>
                 </div>
                 <div class="navItem">
                     <div style="position: absolute;width: 100%;height: 100%;">
                         <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div>
-                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 29%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/medical-record.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Medical<br>Reports</span>
+                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 29%;margin-right: auto;position: relative;margin-top: 12%;" src="../assets/img/doctor.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Doctor<br>Management</span>
+                </div>
+                <div class="navItem">
+                    <div style="position: absolute;width: 100%;height: 100%;">
+                        <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div>
+                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 29%;margin-right: auto;position: relative;margin-top: 12%;" src="../assets/img/medical-record.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Medical<br>Reports</span>
                 </div>
             </div>
             <div id="page">
@@ -72,15 +77,15 @@
                             <!-- Start: Find A Doctor Section -->
                             <div class="find-doctor" style="background: linear-gradient(51deg, rgb(47,177,255) 0%, #2FB1FF 100%);box-shadow: 3px 1px 6px rgb(124,129,135), 3px 1px 6px rgb(124,129,135);">
                                 <!-- Start: Find A -->
-                                <div class="find-text-lbl"><span style="font-size: 57px;color: rgb(255,255,255);text-align: left;">FIND A PATIENT</span></div><!-- End: Find A -->
+                                <div class="find-text-lbl"><span style="font-size: 57px;color: rgb(255,255,255);text-align: left;">FIND A&nbsp;</span></div><!-- End: Find A -->
                                 <!-- Start: Doctor -->
-                                <div class="doctor-text-lbl"><span class="text-uppercase" style="color: rgb(255,255,255);font-size: 30px;">reports</span></div><!-- End: Doctor -->
+                                <div class="doctor-text-lbl"><span class="text-uppercase" style="color: rgb(255,255,255);font-size: 30px;">DOCTOR</span></div><!-- End: Doctor -->
                                 <!-- Start: Search Section -->
-                                <div class="search-field-doc"><input class="form-control-lg search-field-length" type="search" placeholder="        Patient Name" style="width: 301.4px;background: #43a7df;color: rgb(255,255,255);opacity: 1;"></div><!-- End: Search Section -->
+                                <div class="search-field-doc"><input class="form-control-lg search-field-length" type="search" placeholder="        Doctor Name" style="width: 301.4px;background: #43a7df;color: rgb(255,255,255);opacity: 1;"></div><!-- End: Search Section -->
                                 <!-- Start: Patient Icon -->
-                                <div><img class="user-name-new" src="assets/img/patient-new.svg" style="filter: invert(100%);"></div><!-- End: Patient Icon -->
+                                <div><img class="user-name-new" src="../assets/img/doctor.svg" style="filter: invert(100%);"></div><!-- End: Patient Icon -->
                                 <!-- Start: Search Icon -->
-                                <div><img class="search-icon" src="assets/img/search.svg" style="filter: invert(100%);opacity: 0.72;"></div><!-- End: Search Icon -->
+                                <div><img class="search-icon" src="../assets/img/search.svg" style="filter: invert(100%);opacity: 0.72;"></div><!-- End: Search Icon -->
                             </div><!-- End: Find A Doctor Section -->
                         </div><!-- End: Find A Doctor -->
                         <div class="bottom-card">
@@ -91,7 +96,7 @@
                                 <!-- Start: Directory -->
                                 <div class="directory-lbl"><span class="text-uppercase" style="color: rgb(255,255,255);font-size: 30px;">DIRECTORY</span></div><!-- End: Directory -->
                                 <!-- Start: Session Directoty Icon -->
-                                <div><img class="session-directory-icon" src="assets/img/patient.svg" style="filter: invert(100%);"></div><!-- End: Session Directoty Icon -->
+                                <div><img class="session-directory-icon" src="../assets/img/patient.svg" style="filter: invert(100%);"></div><!-- End: Session Directoty Icon -->
                             </div><!-- End: Session Directory -->
                             <!-- Start: All Doctors -->
                             <div class="all-doctors" style="background: linear-gradient(24deg, rgb(47,148,252) 23%, rgb(142,223,249) 100%);box-shadow: 3px 1px 6px rgb(124,129,135), 3px 1px 6px rgb(124,129,135);">
@@ -100,7 +105,7 @@
                                 <!-- Start: Doctors -->
                                 <div class="doctors-lbl"><span class="text-uppercase" style="color: rgb(255,255,255);font-size: 30px;">DOCTORS</span></div><!-- End: Doctors -->
                                 <!-- Start: All Doctors Icon -->
-                                <div><img class="all-doctos-icon" src="assets/img/doctor%20group.svg" style="filter: invert(100%);"></div><!-- End: All Doctors Icon -->
+                                <div><img class="all-doctos-icon" src="../assets/img/doctor%20group.svg" style="filter: invert(100%);"></div><!-- End: All Doctors Icon -->
                             </div><!-- End: All Doctors -->
                         </div>
                     </div>
@@ -126,7 +131,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -140,7 +145,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -154,7 +159,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -168,7 +173,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -182,7 +187,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -196,7 +201,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -210,7 +215,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -224,7 +229,7 @@
                                                 <!-- Start: 1st row -->
                                                 <td class="listItem">
                                                     <div class="d-flex flex-row listItemBg" style="width: 100%;">
-                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="assets/img/profile.svg"></div>
+                                                        <div class="d-xl-flex align-items-xl-center" style="width: 45px;height: 100%;padding: 5px;"><img class="img-fluid" src="../assets/img/profile.svg"></div>
                                                         <div class="d-xl-flex align-items-xl-center" style="height: 100%;width: 45%;"><span style="font-size: 12px;margin-left: 6px;">C. H. P. A. Silva</span></div>
                                                         <div class="toggle-status">
                                                             <!-- Start: Toggle Switch --><label class="switch">
@@ -247,8 +252,8 @@
             </div>
         </div>
     </section><!-- End: Side Navigation + Page -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

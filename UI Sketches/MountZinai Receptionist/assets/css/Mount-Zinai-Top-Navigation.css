@@ -235,9 +235,6 @@
 }
 
 .nic-lbl {
-}
-
-.nic-lbl {
   position: relative;
   left: 22vw;
 }
@@ -282,12 +279,6 @@
   position: relative;
   left: -2vw;
   bottom: 5vh;
-}
-
-.session-text {
-  position: relative;
-  left: 4vw;
-  top: 2vw;
 }
 
 .directory-lbl {
@@ -429,9 +420,6 @@
 }
 
 .btn.btn-primary.appointment-btn {
-}
-
-.btn.btn-primary.appointment-btn {
   width: 14vw;
   height: 6vh;
   position: relative;
@@ -439,5 +427,607 @@
   background-color: #259EFF;
   border-radius: 17px;
   left: -1vw;
+}
+
+.col.WidgetGray.appointment-view {
+  display: block;
+  height: 560px;
+  width: 100%;
+}
+
+.form-control-lg.appointmen-no-input {
+  background-color: #D4D9D3;
+  border: none;
+  width: 15vw;
+  position: relative;
+  left: 2vw;
+  top: 1vh;
+  height: 5vh;
+}
+
+.appointment-no-div {
+  width: 23vw;
+  background-color: #D4D9D3;
+  border-radius: 20px;
+  display: flex;
+  height: 7vh;
+}
+
+.form-control-lg.appointmen-no-input:focus {
+  outline: none;
+}
+
+.appointment-no-section {
+  position: relative;
+  left: 5vw;
+  top: 9vh;
+}
+
+.appointment-no-icon {
+  position: relative;
+  left: 1vw;
+  top: 1vh;
+}
+
+.patient-name-section {
+  position: relative;
+  left: 5vw;
+  top: 13vh;
+}
+
+.doctor-name-section {
+  position: relative;
+  left: 5vw;
+  top: 15vh;
+}
+
+.contain-div {
+  display: flex;
+}
+
+.right-column-set {
+  position: relative;
+  left: 19vw;
+  top: 22vh;
+}
+
+.session-date {
+  width: 21vw;
+  position: relative;
+  left: 1vw;
+  background-color: #D4D9D3;
+  border: none;
+}
+
+.session-time {
+  position: relative;
+  left: 5vw;
+  top: 12vh;
+}
+
+.low-btn-set {
+  position: relative;
+  top: 16vh;
+}
+
+.btn.btn-primary.delete-btn {
+  width: 12vw;
+  height: 7vh;
+  position: relative;
+  top: 2vh;
+  background-color: #ED2227;
+  border-radius: 17px;
+  left: -5vw;
+  border: none;
+}
+
+.btn.btn-primary.back-btn {
+  width: 12vw;
+  height: 7vh;
+  position: relative;
+  top: 2vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: -3vw;
+  border: none;
+}
+
+.btn.btn-primary.save-btn {
+  width: 12vw;
+  height: 7vh;
+  position: relative;
+  top: 2vh;
+  background-color: #099738;
+  border-radius: 17px;
+  left: -1vw;
+  border: none;
+}
+
+.fa.fa-star.delete-icon {
+  position: relative;
+  left: -6vw;
+}
+
+.delete-icon {
+  width: 2rem;
+  position: relative;
+  left: -7.5vw;
+  bottom: .5vh;
+}
+
+.edit-appointment-icon-div {
+  position: relative;
+  top: -67vh;
+  width: 13vw;
+  left: 18vw;
+}
+
+.edit-appointment-icon {
+  width: 5vw;
+}
+
+.edit-position {
+  bottom: 48vh;
+  position: relative;
+  left: 9vw;
+}
+
+.appointment-position {
+  position: relative;
+  bottom: 51vh;
+  left: 9vw;
+}
+
+.col.common-bg.doc-channel-view {
+  display: block;
+  height: 526px;
+  width: 100px;
+}
+
+.common-bg {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 137px;
+  transition: all 0.2s ease;
+}
+
+.common-div-doc {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 60vh;
+  width: 31vw;
+  position: relative;
+  top: 15vh;
+  left: 27vw;
+}
+
+.btn-set-doc {
+  position: relative;
+  left: 7vw;
+  top: 0vh;
+}
+
+.btn.btn-primary.back-btn-doc {
+  width: 10vw;
+  height: 6vh;
+  position: relative;
+  top: 2vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: -3vw;
+  border: none;
+}
+
+.btn.btn-primary.save-btn-doc {
+  width: 12vw;
+  height: 6vh;
+  position: relative;
+  top: 2vh;
+  background-color: #099738;
+  border-radius: 17px;
+  left: -1vw;
+  border: none;
+}
+
+.search-icon-doc {
+  width: 1.5rem;
+  position: relative;
+  left: -7.5vw;
+  bottom: .5vh;
+}
+
+.input-set-doc {
+  position: relative;
+  top: -4vh;
+  left: -1vw;
+}
+
+.doc-name-div {
+  width: 23vw;
+  background-color: #D4D9D3;
+  border-radius: 20px;
+  display: flex;
+  height: 7vh;
+}
+
+.doc-name-icon {
+  position: relative;
+  left: 1vw;
+  top: 1vh;
+}
+
+.form-control-lg.doc-name-input {
+  background-color: #D4D9D3;
+  border: none;
+  width: 15vw;
+  position: relative;
+  left: 2vw;
+  top: 1vh;
+  height: 5vh;
+}
+
+.form-control-lg.session-date-doc {
+  width: 21vw;
+  position: relative;
+  left: 0vw;
+  background-color: #D4D9D3;
+  border: none;
+  bottom: 1vh;
+  z-index: 22;
+}
+
+.doc-channel {
+  position: relative;
+  left: -11vw;
+  top: 2vh;
+}
+
+.doc-channel-img {
+  width: 6vw;
+}
+
+.common-div-doc-search {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 22vh;
+  width: 55vw;
+  position: relative;
+  top: 27vh;
+  left: 9vw;
+  display: flex;
+}
+
+.low-btn-set-doc-search {
+  position: fixed;
+  top: 71vh;
+  left: 69vw;
+}
+
+.date-time-contain {
+  position: relative;
+  left: 4vw;
+  top: 5vh;
+}
+
+.time-wrap-div {
+  position: relative;
+  left: 1vw;
+}
+
+.appointment-contain {
+  position: relative;
+  left: 12vw;
+  top: 5vh;
+}
+
+.num-wrap-div {
+  position: relative;
+  left: 6vw;
+}
+
+.status-info {
+  position: relative;
+  left: 6vw;
+  top: 3vh;
+}
+
+.btn.btn-primary.book-btn-doc {
+  width: 11vw;
+  height: 7vh;
+  position: relative;
+  top: 12vh;
+  background-color: #EB383D;
+  border-radius: 17px;
+  left: 68vw;
+  border: none;
+}
+
+.book-icon-doc {
+  width: 2rem;
+  position: relative;
+  left: -6.5vw;
+  bottom: .5vh;
+}
+
+.specialization-wrap {
+  position: relative;
+  left: 0vw;
+  top: -1vh;
+}
+
+.common-div-doc-info {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 22vh;
+  width: 40vw;
+  position: relative;
+  top: -33vh;
+  left: -1vw;
+  display: flex;
+}
+
+.doc-img {
+  width: 10vw;
+  position: relative;
+  bottom: -1vh;
+  left: 2vw;
+}
+
+.doc-details {
+  position: relative;
+  left: 4vw;
+  top: 5vh;
+}
+
+.common-div-doc-book-view {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 22vh;
+  width: 55vw;
+  position: relative;
+  top: 1vh;
+  left: 10vw;
+  display: flex;
+}
+
+.active-appointment {
+  position: relative;
+  left: 13vw;
+  top: 5vh;
+}
+
+.available-time {
+  position: relative;
+  left: 16vw;
+  top: 5vh;
+}
+
+.available-wrap-div {
+  position: relative;
+  left: 0vw;
+}
+
+.btn.btn-primary.back-btn-doc-book {
+  width: 11vw;
+  height: 7vh;
+  position: relative;
+  top: 5vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: -15vw;
+  border: none;
+}
+
+.btn.btn-primary.book-btn-doc-book {
+  width: 14vw;
+  height: 7vh;
+  position: relative;
+  background-color: #099738;
+  border-radius: 17px;
+  border: none;
+  top: -2vh;
+  left: -2vw;
+}
+
+.confirm-icon-doc {
+  width: 2rem;
+  position: relative;
+  left: -8.5vw;
+  bottom: 0.5vh;
+}
+
+.nic-confirm {
+  width: 36vw;
+  height: 14vh;
+  background-color: #D4D9D3;
+  position: relative;
+  left: 21vw;
+  top: 6vh;
+  border-radius: 20px;
+}
+
+.patient-icon {
+  width: 5vw;
+  position: relative;
+  top: 3vh;
+  left: 2vw;
+}
+
+.nic-input {
+  position: relative;
+  left: 8vw;
+  height: 7vh;
+  top: -6vh;
+  width: 25vw;
+  background-color: #D4D9D3;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.image-patient {
+  width: 5vw;
+}
+
+.all-patient-lbl {
+  display: flex;
+}
+
+.all-text-lbl {
+  position: relative;
+  left: 0vw;
+  top: -2vh;
+}
+
+.patient-text-lbl-list {
+  position: relative;
+  top: 5vh;
+  left: -11.5vw;
+}
+
+.btn.btn-primary.back-btn-all-patient {
+  width: 11vw;
+  height: 6vh;
+  position: relative;
+  top: -1vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: 54vw;
+  border: none;
+}
+
+.patient-add-placement {
+  position: relative;
+  top: 16vh;
+  left: -10vw;
+}
+
+.patient-dob {
+  border-radius: 10px;
+  border-color: #C0C0C0;
+}
+
+.btn.btn-primary.dropdown-toggle.blood-drop-down {
+  background-color: #F7FBFF;
+  border-radius: 10px;
+  border-color: #B3B3B3;
+}
+
+.common-div-patient-search {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 26vh;
+  width: 46vw;
+  position: relative;
+  top: 23vh;
+  left: 18vw;
+  display: flex;
+}
+
+.patient-details {
+  position: relative;
+  left: 4vw;
+  top: 3vh;
+}
+
+.search-patient {
+  width: 35vw;
+  height: 8vh;
+  background-color: #D4D9D3;
+  position: relative;
+  left: 35vw;
+  top: 20vh;
+  border-radius: 20px;
+}
+
+.patient-icon-search {
+  width: 3vw;
+  position: relative;
+  top: 1vh;
+  left: 2vw;
+}
+
+.search-input {
+  position: relative;
+  left: 8vw;
+  height: 3vh;
+  top: -3vh;
+  width: 25vw;
+  background-color: #D4D9D3;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.icon-search {
+  width: 2vw;
+  position: relative;
+  top: -7vh;
+  left: 30vw;
+  opacity: 39%;
+}
+
+.btn.btn-primary.back-arrange {
+  width: 22vw;
+  height: 7vh;
+  position: relative;
+  top: -6vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: 65vw;
+  border: none;
+}
+
+.btn.btn-primary.book-btn-patient-arrange {
+  width: 21vw;
+  height: 7vh;
+  position: relative;
+  background-color: #259EFF;
+  border-radius: 17px;
+  border: none;
+  top: -12vh;
+  left: 62vw;
+}
+
+.arrange-icon {
+  width: 2rem;
+  position: relative;
+  left: -15.5vw;
+  bottom: 0.5vh;
+}
+
+.admited-patients-lbl {
+  position: relative;
+  top: 5vh;
+  left: -5.5vw;
+}
+
+.btn.btn-primary.back-btn-all-admitted-patients {
+  width: 11vw;
+  height: 6vh;
+  position: relative;
+  top: -1vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: 35vw;
+  border: none;
+}
+
+.admit-patient {
+  position: relative;
+  top: 5vh;
+  left: -9.5vw;
 }
 
