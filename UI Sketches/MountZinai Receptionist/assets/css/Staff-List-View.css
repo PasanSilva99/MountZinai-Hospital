@@ -1,0 +1,28 @@
+.FullListItem {
+  margin-top: 10px;
+  border-radius: 10px !important;
+  transition: all 0.5s ease;
+}
+
+.listHeader {
+  color: #2B2B2B;
+}
+
+.FullListItem-selected {
+  background-color: #2FB1FF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(160,160,160,0.68);
+  transition: all 0.5s ease;
+}
+
+.FullListItem:hover {
+  background-color: #2FB1FF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(112,112,112,0.3);
+  color: white;
+}
+
+.FullListItem {
+  border-radius: 10px;
+}
+

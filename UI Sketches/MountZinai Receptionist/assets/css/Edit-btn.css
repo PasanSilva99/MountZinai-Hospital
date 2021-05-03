@@ -1,0 +1,18 @@
+.imageInvert {
+  filter: invert(100%);
+}
+
+.imageInvert {
+  filter: invert(100%);
+}
+
+.btn-edit {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: #8F908E;
+  border-style: none;
+  box-shadow: 0px 0px 10px rgba(123,123,123,0.11);
+}
+
