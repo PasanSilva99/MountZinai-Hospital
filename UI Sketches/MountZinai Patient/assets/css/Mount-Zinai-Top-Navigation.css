@@ -1,0 +1,151 @@
+#topNav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo {
+  height: 60px;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+#greetingText {
+  font-size: 24px;
+  margin: auto;
+  margin-left: 5vw;
+}
+
+#userImage {
+  right: 0;
+  margin-right: 3vw;
+  width: 35px;
+}
+
+#notificationIcon {
+  width: 25px;
+  margin-right: 3vw;
+}
+
+.ongoing-number-bg {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#2F94FC,#3BCCF9);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.1), 0 8px 16px 0 rgba(10, 10, 10, 0.1);
+  height: 296px;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 7vh;
+  left: -1vw;
+}
+
+.my-number {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#2F94FC,#3BCCF9);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.1), 0 8px 16px 0 rgba(10, 10, 10, 0.1);
+  height: 296px;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 7vh;
+  left: -1vw;
+}
+
+.ongoing-number-text {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  top: 5vh;
+}
+
+.my-number-text {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  top: 6vh;
+}
+
+.WidgetGray.recent-appointment-pos {
+  position: relative;
+  top: 6vh;
+  left: -10vw;
+}
+
+.recent-appointment-bg {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 124px;
+  transition: all 0.2s ease;
+}
+
+.col-6.appointment-details-bg.hoverWhite {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#2F94FC,#3BCCF9);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.1), 0 8px 16px 0 rgba(10, 10, 10, 0.1);
+  height: 296px;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 9vh;
+  left: -3vw;
+}
+
+.appointment-details-lbl {
+  position: relative;
+  top: 2vh;
+}
+
+.appointment-toics {
+}
+
+.appointment-content-topic {
+  position: relative;
+  top: 2vh;
+}
+
+.appointment-content-topic.sub-position {
+  top: 2vh;
+}
+
+.appointment-detail-right {
+  position: relative;
+  left: 2vw;
+}
+
+.all-content-pos {
+  position: relative;
+  top: 1vh;
+}
+
+.col-6.doctors-comments.hoverWhite {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#2F94FC,#3BCCF9);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10, 10, 10, 0.1), 0 8px 16px 0 rgba(10, 10, 10, 0.1);
+  height: 281px;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 9vh;
+  left: -3vw;
+}
+
+.doctors-comments-lbl {
+  position: relative;
+  top: 2vh;
+}
+
+.comment-img {
+  width: 6vw;
+  position: relative;
+  left: 14vw;
+  top: -4vh;
+}
+

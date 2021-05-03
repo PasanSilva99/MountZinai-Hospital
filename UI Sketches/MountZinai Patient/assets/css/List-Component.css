@@ -1,0 +1,115 @@
+.descriptive-lbl {
+  display: flex;
+  position: relative;
+  top: 1vh;
+}
+
+.name-report {
+  height: 100%;
+  width: 88%;
+}
+
+.WidgetGray.document-card-bg {
+  height: 45%;
+  position: absolute;
+  width: 77%;
+  margin: 5px;
+  top: 7vh;
+  left: 15vw;
+}
+
+.name-lbl-mr {
+  position: relative;
+  left: 9vw;
+}
+
+.mr-date {
+  position: relative;
+  left: 31vw;
+}
+
+.uploaded-by {
+  position: relative;
+  left: 59vw;
+}
+
+.uploader {
+  height: 100%;
+  margin-right: 15px;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  left: -3vw;
+}
+
+.date-report {
+  height: 100%;
+  width: 72%;
+  position: relative;
+  left: 5vw;
+}
+
+.WidgetGray:hover {
+  box-shadow: 0 8px 16px 0 rgba(172,240,249,0.11), 0 8px 16px 0 rgba(0,102,255,0.1);
+}
+
+.WidgetGray {
+  background-image: radial-gradient(farthest-corner at -120% 110%,#F3F3F3,#F3F3F3);
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08), 0 8px 16px 0 rgba(10,10,10,0.05);
+  height: 137px;
+  transition: all 0.2s ease;
+}
+
+.WidgetTitleSmall {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+.listItem {
+  height: 60px;
+  display: block;
+}
+
+.listItemBg:hover {
+  background-color: #2FB1FF;
+  box-shadow: 0px 0px 20px 1px rgba(160,160,160,0.68);
+}
+
+.listItemBg {
+  background-color: #eaeaea;
+  height: 100%;
+  border-radius: 10px;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease;
+}
+
+.showAll {
+  background-color: #D4D9D3;
+  height: 35px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 0px 0px 10px 10px;
+  transition: all 0.5s ease;
+  backdrop-filter: blur(50px) opacity(80%);
+}
+
+.showAll:hover {
+  background-color: #3BCCF9;
+  color: white;
+}
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  color: #2B2B2B;
+}
+
