@@ -1,0 +1,11 @@
+.btn.btn-primary.back-btn {
+  width: 12vw;
+  height: 7vh;
+  position: relative;
+  top: 2vh;
+  background-color: #259EFF;
+  border-radius: 17px;
+  left: -3vw;
+  border: none;
+}
+
