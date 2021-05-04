@@ -1,0 +1,22 @@
+.imageInvert {
+  filter: invert(100%);
+}
+
+.imageInvert {
+  filter: invert(100%);
+}
+
+.btn-done {
+  float: right;
+  position: relative;
+  border-radius: 10px;
+  background: #3BCCF9;
+  border-style: none;
+  box-shadow: 0px 0px 10px rgba(0,123,255,0.38);
+}
+
+.btn-done:hover {
+  background: #32b1d9;
+  box-shadow: 0px 0px 10px rgba(0,123,255,0.1);
+}
+
