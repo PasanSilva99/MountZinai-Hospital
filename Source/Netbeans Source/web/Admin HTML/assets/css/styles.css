@@ -335,3 +335,27 @@ textWhite {
   right: 0;
 }
 
+.date-card {
+  width: 7vw;
+  height: 14vh;
+  background-color: #35C0FB;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-left: 23px;
+}
+
+.contain-position {
+  margin-top: 10px;
+  display: block;
+}
+
+.card-position {
+  width: 38vw;
+  margin-left: -6px;
+}
+
+.date-position {
+  margin-top: -8px;
+}
+
+
