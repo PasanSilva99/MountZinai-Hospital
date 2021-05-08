@@ -1,0 +1,58 @@
+#topNav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo {
+  height: 60px;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+#greetingText {
+  font-size: 24px;
+  margin: auto;
+  margin-left: 5vw;
+}
+
+#userImage {
+  right: 0;
+  margin-right: 3vw;
+  width: 45px;
+}
+
+#notificationIcon {
+  width: 37px;
+  margin-right: 4vw;
+}
+
+#logo {
+  height: 60px;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+.date-card {
+  width: 7vw;
+  height: 14vh;
+  background-color: #35C0FB;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-left: 23px;
+}
+
+.contain-position {
+  margin-top: 10px;
+  display: block;
+}
+
+.card-position {
+  width: 38vw;
+  margin-left: -6px;
+}
+
+.date-position {
+  margin-top: -8px;
+}
+
