@@ -1,0 +1,15 @@
+.container {
+}
+
+.container.pageContent {
+  width: 100%;
+  height: 95%;
+}
+
+.hoverBlue {
+}
+
+.hoverBlue:hover {
+  color: #2F94FC;
+}
+
