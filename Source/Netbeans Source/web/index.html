@@ -16,20 +16,28 @@
         <!-- Start: Main Card -->
         <div class="login-card" style="background: #D3DDE2;border-radius: 30px;">
             <div class="container">
+                <form action="LoginServlet" method="GET">
                 <!-- Start: Logo Image Div -->
-                <div class="logo-image"><img src="assets/img/MountZinai%20Hospital%20Logo.png" style="width: 299px;"></div><!-- End: Logo Image Div -->
+                <div class="logo-image">
+                    <img src="assets/img/MountZinai%20Hospital%20Logo.png" style="width: 299px;">
+                </div>
+                <!-- End: Logo Image Div -->
                 <!-- Start: Input Fields Username -->
                 <section class="email-field">
                     <!-- Start: Email Div -->
                     <div class="email-input">
-                        <div class="div-bottom" style="width: 432px;"><img src="assets/img/email.svg" style="width: 33px;height: 44px;"><input type="email" class="email-input" placeholder="Email Address"></div>
+                        <div class="div-bottom" style="width: 432px;">
+                            <img src="assets/img/email.svg" style="width: 33px;height: 44px;">
+                            <input type="email" class="email-input" name="email-input" placeholder="Email Address"></div>
                     </div><!-- End: Email Div -->
                 </section><!-- End: Input Fields Username -->
                 <!-- Start: Input Fields Password -->
                 <section class="password-field">
                     <!-- Start: Password Div -->
                     <div class="password-input">
-                        <div class="div-bottom" style="width: 432px;"><img src="assets/img/passwor%20icon.svg" style="width: 33px;height: 44px;"><input type="password" class="password-input" placeholder="Password"></div>
+                        <div class="div-bottom" style="width: 432px;">
+                            <img src="assets/img/passwor%20icon.svg" style="width: 33px;height: 44px;">
+                            <input type="password" class="password-input" name="password-input" placeholder="Password"></div>
                     </div><!-- End: Password Div -->
                 </section><!-- End: Input Fields Password -->
                 <!-- Start: Remember-me-inline -->
@@ -41,7 +49,8 @@
                 </div><!-- End: Remember-me-inline -->
                 <!-- Start: LogIn Button Field -->
                 <section>
-                    <div class="login-btn-position"><button class="btn btn-primary" id="login-btn" type="button" style="background: #3bccf9;font-size: 23px;border-style: none;box-shadow: 1px 1px 5px 1px var(--secondary);filter: blur(0px);">Log In</button></div>
+                    <div class="login-btn-position"><button class="btn btn-primary" id="login-btn" type="submit" style="background: #3bccf9;font-size: 23px;border-style: none;box-shadow: 1px 1px 5px 1px var(--secondary);filter: blur(0px);">Log In</button></div>
+                </form>
                 </section><!-- End: LogIn Button Field -->
             </div>
         </div><!-- End: Main Card -->
