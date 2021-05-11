@@ -4,12 +4,20 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/Common.java</file>
+<<<<<<< Updated upstream
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/Doctor%20HTML/assets/css/My-Customized-Top-Navigation-MZ.css</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DBConString.java</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/LoginServlet.java</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/AddDoctorServlet.java</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DBCon.java</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/index.html</file>
+=======
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/LoginServlet.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DBConString.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DBCon.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/index.html</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/WEB-INF/web.xml</file>
+>>>>>>> Stashed changes
         </group>
     </open-files>
 </project-private>
