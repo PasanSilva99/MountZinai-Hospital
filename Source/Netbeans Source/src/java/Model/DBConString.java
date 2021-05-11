@@ -20,7 +20,7 @@ public class DBConString {
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mountzinai", "root", "ilmlswmwh2416@M");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mountzinai", "root", "");
             
             return con;
             
