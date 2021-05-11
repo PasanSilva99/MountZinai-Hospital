@@ -78,7 +78,6 @@ public class LoginServlet extends HttpServlet {
                 if(isValidUser)
                 {
                     //out.println(email + " Is Valid. Hooray! 🎉");
-                    
                     writer.println(email + " Is Valid. Hooray! 🎉");
                 }
                 else
