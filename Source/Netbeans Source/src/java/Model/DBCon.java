@@ -14,17 +14,16 @@ import Model.DBCon;
  * @author pasan
  */
 public class DBCon extends DBConString{
-    public Connection CreateConnection;
     
     public boolean AuthenticateUser(String email, String passwordHash)
     {
         boolean validUser = false;
         
         try{
-            Connection con = new DBCon().CreateConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT Email, Password FROM Staff WHERE Email=? AND Password=?");
-            ps.setString(0, email);
-            ps.setString(1, passwordHash);
+            Connection con = CreateConnection();
+            PreparedStatement ps = con.prepareStatement("SELECT Email FROM Staff WHERE Email = ? AND Password = ?");
+            ps.setString(1, email);
+            ps.setString(2, passwordHash);
             
             ResultSet rs = ps.executeQuery();
             
