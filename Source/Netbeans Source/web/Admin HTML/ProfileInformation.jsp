@@ -1,3 +1,10 @@
+<%-- 
+    Document   : ProfileInformation
+    Created on : May 12, 2021, 9:10:53 AM
+    Author     : pasan
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
