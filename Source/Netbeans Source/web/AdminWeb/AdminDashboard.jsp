@@ -4,11 +4,6 @@
     Author     : pasan
 --%>
 
-<%@page import="java.time.format.DateTimeFormatter"%>
-<%@page import="java.time.LocalDateTime"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.util.*" %>
-<%@page import="Controller.Common" %>
 <!DOCTYPE html>
 <html lang="en">
 
