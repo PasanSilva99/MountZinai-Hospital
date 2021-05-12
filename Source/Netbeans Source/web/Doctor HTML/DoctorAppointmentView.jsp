@@ -255,6 +255,82 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
+        
+             <script>
+        var interval = setInterval(UpdateTime, 1000);
+        
+        function UpdateTime()
+        {
+            var dateObj = new Date();
+            var day = ConvDay(dateObj.getDay());
+            var date = FixLength(dateObj.getDate());
+            var hour = FixLength(dateObj.getHours());
+            var minute = FixLength(dateObj.getMinutes());
+            var dateSuffix = GetDateSuffix(date);
+            
+            document.getElementById("lbl_day").innerHTML = day;
+            document.getElementById("lbl_date").innerHTML = date;
+            document.getElementById("lbl_dateSuffix").innerHTML = dateSuffix;
+            document.getElementById("lbl_timeHour").innerHTML = hour;
+            document.getElementById("lbl_timeMinute").innerHTML = minute;
+        }
+        
+        function FixLength(n)
+        {
+            if(n < 10)
+                return "0" + n;
+            else 
+                return n;
+        }
+    
+        function GetDateSuffix(d)
+        {
+            switch (d)
+            {
+                case 1:
+                    return "st";
+                    break;
+                case 2:
+                    return "nd";
+                    break;
+                case 3:
+                    return "rd";
+                    break;
+                default:
+                    return "th";
+            }
+        }
+        
+        function ConvDay(d)
+        {
+            switch(d)
+            {
+                case 0:
+                    return "Sunday";
+                    break;
+                case 1:
+                    return "Monday";
+                    break;
+                case 2:
+                    return "Tuesday";
+                    break;
+                case 3:
+                    return "Wednesday";
+                    break;
+                case 4:
+                    return "Thursday";
+                    break;
+                case 5:
+                    return "Friday";
+                    break;
+                case 6:
+                    return "Saturday";
+                    break;
+                    
+            }
+        }
+    </script>
 </body>
 
 </html>
