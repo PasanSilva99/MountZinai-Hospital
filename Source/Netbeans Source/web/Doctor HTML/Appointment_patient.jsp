@@ -52,15 +52,15 @@
         <div class="fillPage">
             <div id="sideNav">
                 <div class="navItem">
-                    <div class="NavItemBg" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage" style="width: 35px;height: 35px;margin-left: 28%;margin-right: auto;position: relative;" src="assets/img/dashboard.svg"><span class="NavItemText" style="width: 100%;text-align: center;display: block;position: relative;">Dashboard</span>
+                    <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 28%;margin-right: auto;position: relative;" src="assets/img/dashboard.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Dashboard</span>
                 </div>
                 <div class="navItem">
-                    <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 30%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/checklist.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Appointment List</span>
+                    <div class="NavItemBg" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage" style="width: 35px;height: 35px;margin-left: 30%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/checklist.svg"><span class="NavItemText" style="width: 100%;text-align: center;display: block;position: relative;">Appointment List</span>
                 </div>
             </div>
             <div id="page">
                 <!-- Start: NewList -->
-                <div class="container" style="display: block;height: 100%;"><span style="color: var(--gray);">Appointment List</span>
+                <div class="container mt-5" style="display: block;height: 100%;"><span style="color: var(--gray);">Appointment List</span>
                     <div class="container" style="height: 90%;overflow: scroll;margin-top: 10px;">
                         <div class="row" style="border-bottom-width: 2px;border-bottom-color: var(--secondary);padding-bottom: 10px;padding-top: 10px;color: var(--gray);">
                             <div class="col-3"><span class="listHeader">Name</span></div>
