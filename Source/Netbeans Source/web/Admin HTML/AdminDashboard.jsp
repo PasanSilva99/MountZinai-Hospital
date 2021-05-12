@@ -45,7 +45,8 @@
                     <!-- Start: Time Content -->
                     <div class="date-position"><label id="lbl_timeHour" class="text-center text-white" style="font-size: 35px;margin-left: 6%"></label>                                
                         <sub style="font-size: 14.75px;"><label id="lbl_timeMinute" class="text-white"></label></sub></div><!-- End: Time Content -->
-                </div><!-- End: Time Card -->
+                </div>
+                <!-- End: Time Card -->
             </div><img class="img-fluid" id="notificationIcon" src="assets/img/bell.svg"><img class="img-fluid" id="userImage" src="assets/img/profile.svg">
         </div>
     </section>
