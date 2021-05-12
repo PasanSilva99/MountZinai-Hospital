@@ -1,3 +1,10 @@
+<%-- 
+    Document   : DoctorAppointmentView
+    Created on : May 12, 2021, 10:25:12 AM
+    Author     : pasan
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
