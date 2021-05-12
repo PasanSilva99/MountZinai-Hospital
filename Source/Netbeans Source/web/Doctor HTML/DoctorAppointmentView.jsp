@@ -1,6 +1,6 @@
 <%-- 
     Document   : DoctorAppointmentView
-    Created on : May 12, 2021, 10:25:12 AM
+    Created on : April 10, 2021, 10:25:12 AM
     Author     : pasan
 --%>
 
@@ -18,29 +18,39 @@
 </head>
 
 <body>
-    <section>
+         <section>
         <div id="topNav">
-            <div><img class="img-fluid" id="logo" src="assets/img/MountZinai%20Hospital%20Logo.png"></div><span id="greetingText">Hello C. H. P. A. Silva</span><img class="img-fluid" id="notificationIcon" src="assets/img/bell.svg"><img class="img-fluid" id="userImage" src="assets/img/profile.svg">
+            <div><img class="img-fluid" id="logo" src="assets/img/MountZinai%20Hospital%20Logo.png"></div><span id="greetingText" style="font-size: 31px;">Hello N.N. Kumarasiri</span>
+            <div class="d-inline-flex float-left justify-content-start card-position">
+                <!-- Start: Date Card -->
+                <div class="text-center shadow date-card" style="box-shadow: 2px 10px 2px 2px;background: radial-gradient(#3bccf9, #2fb1ff);">
+                    <div class="contain-position"><label id="lbl_day" class="text-uppercase text-center text-white d-block">                        
+                        </label></div>
+                            <div class="date-position"><label id="lbl_date" class="text-center text-white" style="font-size: 33px;">
+                            
+                                </label><sup style="font-size: 19.75px;"><label class="text-white" id="lbl_dateSuffix">
+                               
+                            </label></sup></div>
+                </div><!-- End: Date Card -->
+                <!-- Start: Time Card -->
+                <div class="text-center shadow date-card" style="box-shadow: 2px 10px 2px 2px;background: radial-gradient(#3bccf9, #2fb1ff);">
+                    <!-- Start: Time Field -->
+                    <div class="contain-position"><label class="text-uppercase text-center text-white d-block">Time</label></div><!-- End: Time Field -->
+                    <!-- Start: Time Content -->
+                    <div class="date-position"><label id="lbl_timeHour" class="text-center text-white" style="font-size: 35px;margin-left: 6%"></label>                                
+                        <sub style="font-size: 14.75px;"><label id="lbl_timeMinute" class="text-white"></label></sub></div><!-- End: Time Content -->
+                </div><!-- End: Time Card -->
+            </div><img class="img-fluid" id="notificationIcon" src="assets/img/bell.svg"><img class="img-fluid" id="userImage" src="assets/img/profile.svg">
         </div>
     </section>
     <section class="pagecont">
         <div class="fillPage">
             <div id="sideNav">
                 <div class="navItem">
-                    <div class="NavItemBg" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage" style="width: 35px;height: 35px;margin-left: 28%;margin-right: auto;position: relative;" src="assets/img/dashboard.svg"><span class="NavItemText" style="width: 100%;text-align: center;display: block;position: relative;">Dashboard</span>
+                    <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 28%;margin-right: auto;position: relative;" src="assets/img/dashboard.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Dashboard</span>
                 </div>
                 <div class="navItem">
-                    <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 30%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/student-card.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Staff<br>Management</span>
-                </div>
-                <div class="navItem">
-                    <div style="position: absolute;width: 100%;height: 100%;">
-                        <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div>
-                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 33%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/stethoscope.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Doctor<br>Management</span>
-                </div>
-                <div class="navItem">
-                    <div style="position: absolute;width: 100%;height: 100%;">
-                        <div class="NavItemBg-nonActive" style="position: absolute;width: 100%;height: 100%;"></div>
-                    </div><img class="NavItemImage-nonActive" style="width: 35px;height: 35px;margin-left: 33%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/patient.svg"><span class="NavItemText-nonActive" style="width: 100%;text-align: center;display: block;position: relative;">Patient<br>Management</span>
+                    <div class="NavItemBg" style="position: absolute;width: 100%;height: 100%;"></div><img class="NavItemImage" style="width: 35px;height: 35px;margin-left: 30%;margin-right: auto;position: relative;margin-top: 12%;" src="assets/img/checklist.svg"><span class="NavItemText" style="width: 100%;text-align: center;display: block;position: relative;">Appointment List</span>
                 </div>
             </div>
             <div id="page">
@@ -50,7 +60,7 @@
                             <div class="row h-75">
                                 <div class="col-6">
                                     <div class="WidgetTotal" style="width: 100%;height: 95%;">
-                                        <div class="d-xl-flex align-items-xl-center w-100"><img class="img-fluid" src="assets/img/user-patient.svg" width="50" height="50" style="margin-top: 10px;margin-left: 10px;"><span style="margin-left: 10px;color: white;font-size: 24px;">C H P A SIlva</span></div>
+                                        <div class="d-xl-flex align-items-xl-center w-100"><img class="img-fluid" src="assets/img/patient.svg" width="50" height="50" style="margin-top: 10px;margin-left: 10px;"><span style="margin-left: 10px;color: white;font-size: 24px;">C H P A SIlva</span></div>
                                         <div class="h-75 row p-0 m-0">
                                             <div class="col-5">
                                                 <div class="row mt-3">
