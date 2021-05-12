@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div id="page">
-                <div class="container pageContent">
+                <div class="container pageContent mt-5">
                     <div class="row h-100">
                         <div class="col-8 h-100">
                             <div class="row h-75">
@@ -172,7 +172,7 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center showAll"><span>Show All</span></div>
+                                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center showAll"><span>Add New Attachments</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
                                         <div class="m-3 h-50" style="overflow: scroll;">
                                             <p>A medical note is an entry into a medical or health record made by a&nbsp;physician, nurse, lab technician&nbsp;<br></p>
                                         </div>
-                                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center showAll" style="margin-left: 20px;"><span>Show All</span></div>
+                                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center showAll" style="margin-left: 20px;"><span>Add New Reports</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@
                                                     </table>
                                                 </div>
                                             </div>
-                                            <div class="d-xl-flex justify-content-xl-center align-items-xl-center showAll"><span>Show All</span></div>
+                                            <div class="d-xl-flex justify-content-xl-center align-items-xl-center showAll"><span>Add Prescription</span></div>
                                         </div>
                                     </div>
                                     <div class="d-xl-flex justify-content-xl-center align-items-xl-start w-100" style="margin: 10px;margin-top: 3vh;"><button class="btn btn-primary" type="button" style="border-radius: 15px;width: 200px;">Back</button></div>

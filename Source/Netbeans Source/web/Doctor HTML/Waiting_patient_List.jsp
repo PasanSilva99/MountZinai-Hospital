@@ -21,47 +21,31 @@
 
 <body>
     <!-- Start: My Customized Top Navigation MZ -->
-    <section>
+                <section>
         <div id="topNav">
-            
-
-            
             <div><img class="img-fluid" id="logo" src="assets/img/MountZinai%20Hospital%20Logo.png"></div><span id="greetingText" style="font-size: 31px;">Hello N.N. Kumarasiri</span>
             <div class="d-inline-flex float-left justify-content-start card-position">
-                                <!-- Start: Date Card -->
-<div class="text-center shadow date-card" style="box-shadow: 2px 10px 2px 2px;background: radial-gradient(#3bccf9, #2fb1ff);">
-<div class="contain-position"><label id="lbl_day" class="text-uppercase text-center text-white d-block">
-</label></div>
-<div class="date-position"><label id="lbl_date" class="text-center text-white" style="font-size: 33px;">
-
-</label><sup style="font-size: 19.75px;"><label class="text-white" id="lbl_dateSuffix">
-
-</label></sup></div>
-</div><!-- End: Date Card -->
-<!-- Start: Time Card -->
-<div class="text-center shadow date-card" style="box-shadow: 2px 10px 2px 2px;background: radial-gradient(#3bccf9, #2fb1ff);">
-<!-- Start: Time Field -->
-<div class="contain-position"><label class="text-uppercase text-center text-white d-block">Time</label></div><!-- End: Time Field -->
-<!-- Start: Time Content -->
-<div class="date-position"><label id="lbl_timeHour" class="text-center text-white" style="font-size: 35px;margin-left: 6%"></label>
-<sub style="font-size: 14.75px;"><label id="lbl_timeMinute" class="text-white"></label></sub></div><!-- End: Time Content -->
-</div>
-                
                 <!-- Start: Date Card -->
                 <div class="text-center shadow date-card" style="box-shadow: 2px 10px 2px 2px;background: radial-gradient(#3bccf9, #2fb1ff);">
-                    <div class="contain-position"><label class="text-uppercase text-center text-white d-block">Sunday</label></div>
-                    <div class="date-position"><label class="text-center text-white" style="font-size: 33px;">31<sup style="font-size: 19.75px;">ST</sup></label></div>
+                    <div class="contain-position"><label id="lbl_day" class="text-uppercase text-center text-white d-block">                        
+                        </label></div>
+                            <div class="date-position"><label id="lbl_date" class="text-center text-white" style="font-size: 33px;">
+                            
+                                </label><sup style="font-size: 19.75px;"><label class="text-white" id="lbl_dateSuffix">
+                               
+                            </label></sup></div>
                 </div><!-- End: Date Card -->
                 <!-- Start: Time Card -->
                 <div class="text-center shadow date-card" style="box-shadow: 2px 10px 2px 2px;background: radial-gradient(#3bccf9, #2fb1ff);">
                     <!-- Start: Time Field -->
                     <div class="contain-position"><label class="text-uppercase text-center text-white d-block">Time</label></div><!-- End: Time Field -->
                     <!-- Start: Time Content -->
-                    <div class="date-position"><label class="text-center text-white" style="font-size: 35px;">07<sub style="font-size: 14.75px;">35</sub></label></div><!-- End: Time Content -->
+                    <div class="date-position"><label id="lbl_timeHour" class="text-center text-white" style="font-size: 35px;margin-left: 6%"></label>                                
+                        <sub style="font-size: 14.75px;"><label id="lbl_timeMinute" class="text-white"></label></sub></div><!-- End: Time Content -->
                 </div><!-- End: Time Card -->
-            </div><img class="img-fluid" id="notificationIcon" src="assets/img/bell.svg"><img class="img-fluid" id="userImage" src="assets/img/doctor.svg">
+            </div><img class="img-fluid" id="notificationIcon" src="assets/img/bell.svg"><img class="img-fluid" id="userImage" src="assets/img/profile.svg">
         </div>
-    </section><!-- End: My Customized Top Navigation MZ -->
+    </section>
     <!-- Start: Side Navigation + Page -->
     <section class="pagecont">
         <div class="fillPage">
@@ -75,7 +59,7 @@
             </div>
             <div id="page">
                 <!-- Start: NewList -->
-                <div class="container" style="display: block;height: 100%;"><span style="color: var(--gray);">Waiting Patient List</span>
+                <div class="container mt-5" style="display: block;height: 100%;"><span style="color: var(--gray);">Waiting Patient List</span>
                     <div class="container" style="height: 90%;overflow: scroll;margin-top: 10px;">
                         <div class="row" style="border-bottom-width: 2px;border-bottom-color: var(--secondary);padding-bottom: 10px;padding-top: 10px;color: var(--gray);">
                             <div class="col-3"><span class="listHeader">Name</span></div>
