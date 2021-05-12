@@ -1,7 +1,7 @@
 <%-- 
     Document   : AddDoctor
-    Created on : May 12, 2021, 10:27:22 AM
-    Author     : pasan
+    Created on : April 10, 2021, 10:27:22 AM
+    Author     : PasanSilva 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -69,7 +69,8 @@
                 <div class="container" style="display: block;height: 100%;padding: 5px;">
                     <div class="row">
                         <div class="col-2">
-                            <div class="row"><img class="img-fluid" src="assets/img/doctor-2.svg" style="border-radius: 15px;width: 150px;height: 150px;">
+                            <div class="row">
+                                <img class="img-fluid" src="assets/img/doctor-2.svg" style="border-radius: 15px;width: 150px;height: 150px;">
                                 <div class="row" style="width: 100%;">
                                     <div class="col" style="margin: 10px;">
                                         <div class="d-flex d-xl-flex flex-row align-items-xl-center">
@@ -86,17 +87,23 @@
                         <div class="col">
                             <div class="row">
                                 <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>Full Name</span>
-                                    <div class="d-xl-flex align-items-xl-center" style="width: 85%;"><select class="ProfileInput" style="width: 20%;padding-left: 5px;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);height: 28px;" required="">
+                                    <div class="d-xl-flex align-items-xl-center" style="width: 85%;">
+                                        <select class="ProfileInput" style="width: 20%;padding-left: 5px;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);height: 28px;" required="">
                                             <optgroup label="Salutation" style="border-radius: 10px;">
-                                                <option value="12" selected="">Mr.</option>
-                                                <option value="13">Mrs</option>
-                                                <option value="14">Ms</option>
+                                                <option value="Mr" selected="">Mr.</option>
+                                                <option value="Mrs">Mrs</option>
+                                                <option value="Ms">Ms</option>
                                             </optgroup>
-                                        </select><input type="text" class="ProfileInput" style="width: 100%;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required=""></div>
+                                        </select>
+                                        <input type="text" class="ProfileInput" style="width: 100%;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required="">
+                                    </div>
                                 </div>
                             </div><!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>Name With Initials</span><input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required=""></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>Name With Initials</span>
+                                    <input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required="">
+                                </div>
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
@@ -120,24 +127,42 @@
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>Email</span><input type="email" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required=""></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>Email</span>
+                                    <input type="email" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required="">
+                                </div>
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>Address Line 1</span><input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required=""></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>Address Line 1</span>
+                                    <input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required="">
+                                </div>
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>Address Line 2</span><input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);"></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>Address Line 2</span>
+                                    <input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);">
+                                </div>
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>City</span><input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required=""></div>
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col" style="margin-right: 8%;"><span>Postal Code</span><input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required=""></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>City</span>
+                                    <input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required="">
+                                </div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col" style="margin-right: 8%;">
+                                    <span>Postal Code</span>
+                                    <input type="text" class="ProfileInput" style="border: 1px solid rgb(176,176,176);background: rgb(247,251,255);" required="">
+                                </div>
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>Qualifications</span><textarea class="ProfileInput" style="height: 15vh;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);"></textarea></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>Qualifications</span>
+                                    <textarea class="ProfileInput" style="height: 15vh;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);"></textarea>
+                                </div>
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
@@ -168,14 +193,28 @@
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>New Password</span><input type="password" class="ProfileInput" style="padding-left: 5px;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);height: 28px;" required="" placeholder="New Password"></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>New Password</span>
+                                    <input type="password" class="ProfileInput" style="padding-left: 5px;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);height: 28px;" required="" placeholder="New Password">
+                                </div>
                             </div><!-- End: ProfileInput -->
                             <!-- Start: ProfileInput -->
                             <div class="row">
-                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col"><span>Confirm Password</span><input type="password" class="ProfileInput" style="padding-left: 5px;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);height: 28px;" required="" placeholder="Confirm Password"></div>
+                                <div class="d-flex d-xl-flex flex-column justify-content-xl-start align-items-xl-start col">
+                                    <span>Confirm Password</span>
+                                    <input type="password" class="ProfileInput" style="padding-left: 5px;border: 1px solid rgb(176,176,176);background: rgb(247,251,255);height: 28px;" required="" placeholder="Confirm Password">
+                                </div>
                             </div><!-- End: ProfileInput -->
-                            <div style="width: 85%;margin-top: 20px;margin-bottom: 20px;"><button class="btn btn-danger btn-delete" type="button"><img class="img-fluid imageInvert" src="assets/img/close.svg" style="width: 20px;height: 20px;margin-right: 5px;margin-top: -3px;">Cancel</button><button class="btn btn-primary d-xl-flex align-items-xl-center btn-done" type="button"><img class="img-fluid imageInvert" src="assets/img/check.svg" style="width: 20px;height: 20px;margin-right: 5px;">Save</button>
-                                <div></div>
+                            <div style="width: 85%;margin-top: 20px;margin-bottom: 20px;">
+                                <button class="btn btn-danger btn-delete" type="button">
+                                    <img class="img-fluid imageInvert" src="assets/img/close.svg" style="width: 20px;height: 20px;margin-right: 5px;margin-top: -3px;">Cancel</button>
+                                    <button class="btn btn-primary d-xl-flex align-items-xl-center btn-done" type="button">
+                                        <img class="img-fluid imageInvert" src="assets/img/check.svg" style="width: 20px;height: 20px;margin-right: 5px;">
+                                        Save
+                                    </button>
+                                <div>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
