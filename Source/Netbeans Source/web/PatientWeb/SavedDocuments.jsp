@@ -744,7 +744,7 @@
                                 class="img-fluid imageInvert"
                                 src="assets/img/add.svg"
                                 style="width: 20px; height: 20px; margin-right: 5px"
-                                />Add New Patient</button
+                                />Add New Document</button
                         ><!-- End: Back Btn -->
                     </div>
                     <!-- End: 1 Row 2 Columns -->
