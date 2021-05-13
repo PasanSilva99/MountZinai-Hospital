@@ -289,7 +289,7 @@
                 <div id="page">
                     <div class="row">
                         <div class="col">
-                            <div class="common-div-doc">
+                            <div class="common-div-doc" style="width:55vw; left:16vw; " >
                                 <!-- Start: Input Set Doc -->
                                 <div class="input-set-doc">
                                     <!-- Start: Doctor Name -->
@@ -316,7 +316,7 @@
                                     </div>
                                     <!-- End: Doctor Name -->
                                     <!-- Start: Session Date -->
-                                    <div class="patient-name-section">
+                                    <div class="patient-name-section" >
                                         <!-- Start: Specialization lbl -->
                                         <div><label>Pick a Session Date</label></div>
                                         <!-- End: Specialization lbl -->
@@ -335,9 +335,9 @@
                                     </div>
                                     <!-- End: Session Date -->
                                     <!-- Start: Pick A Date -->
-                                    <div class="doctor-name-section">
+                                    <div class="doctor-name-section" style=" left: 30vw; top: -13vh;">
                                         <!-- Start: Pick A Date lbl -->
-                                        <div><label>Session Time</label></div>
+                                        <div><label>Session Start Time</label></div>
                                         <!-- End: Pick A Date lbl -->
                                         <!-- Start: Pick A Date Div -->
                                         <div class="appointment-no-div">
@@ -353,38 +353,96 @@
                                         <!-- End: Pick A Date Div -->
                                     </div>
                                     <!-- End: Pick A Date -->
-                                </div>
-                                <!-- End: Input Set Doc -->
-                                <!-- Start: RightColumn Set -->
-                                <div class="btn-set-doc">
-                                    <!-- Start: Button Set -->
-                                    <div class="low-btn-set">
 
-                                        <!-- Start: Back btn -->
-                                        <a href="DoctorManagement.jsp" style="text-decoration:none;">
+                                    <!--Select Session End Time-->
+
+                                    <div class="doctor-name-section" style=" left: 30vw; top: -9vh;">
+                                        <!-- Start: Pick A Date lbl -->
+                                        <div><label>Session End Time</label></div>
+                                        <!-- End: Pick A Date lbl -->
+                                        <!-- Start: Pick A Date Div -->
+                                        <div class="appointment-no-div">
+                                            <!-- Start: Pick A Date Icon -->
+                                            <div class="appointment-no-icon">
+                                                <input
+                                                    class="form-control-lg session-time-doc"
+                                                    type="time"
+                                                    />
+                                            </div>
+                                            <!-- End: Pick A Date Icon -->
+                                        </div>
+                                        <!-- End: Pick A Date Div -->
+                                    </div>
+
+                                    <!--Select Room No:-->
+
+                                    <!-- Start: ProfileInput -->
+                                    <div class="row" >
+                                        <div
+                                            class="
+                                            d-flex d-xl-flex
+                                            flex-column
+                                            justify-content-xl-start
+                                            align-items-xl-start
+                                            col
+                                            "
+                                            style="left: 5vw; bottom:6vh;"
+                                            >
+                                            <span>Room No</span
+                                            ><select
+                                                class="ProfileInput"
+                                                style="
+                                                width: 20%;
+                                                padding-left: 5px;
+                                                border: 1px solid rgb(176, 176, 176);
+                                                background: #D4D9D3;
+                                                height: 50px;
+                                                width: 20vw;
+                                                "
+                                                required=""
+                                                >
+                                                <optgroup label="RoomNo" style="border-radius: 10px">
+                                                    <option value="Room1">Room 1</option>
+                                                    <option value="Room2">Room 2</option>
+                                                    <option value="Room3">Room 3</option>
+                                                    <option value="Room4">Room 4</option>
+                                                    <option value="Room5">Room 5</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- End: ProfileInput -->
+                                    <a href="DoctorManagement.jsp" style="text-decoration:none;">
+                                        <div style="position: relative; left: 10vw; top: -4vh;">
+
                                             <button
                                                 class="btn btn-primary back-btn-doc"
                                                 type="button"
-                                                style="font-size: 22px; text-align: center">
+                                                style="font-size: 22px; text-align: center; ">
                                                 Back
                                             </button>
-                                        </a>
 
-                                        <!-- End: Back btn -->
-                                        <!-- Start: Save btn --><button
+                                        </div>
+                                    </a>
+                                    <div style="position: relative; left: 20vw; top: -10vh;">
+                                        <button
                                             class="btn btn-primary save-btn-doc"
                                             type="button"
-                                            style="font-size: 22px; text-align: right"
-                                            >
-                                            Add<img
+                                            style="font-size: 22px; text-align: right">
+                                            Add
+                                            <img
                                                 class="search-icon-doc"
                                                 src="../assets/img/add.svg"
                                                 style="filter: invert(100%)"
-                                                /></button
-                                        ><!-- End: Save btn -->
+                                                />
+                                        </button>
+
                                     </div>
-                                    <!-- End: Button Set -->
+
                                 </div>
+                                <!-- End: Input Set Doc -->
+                                <!-- Start: RightColumn Set -->
+
                                 <!-- End: RightColumn Set -->
                             </div>
                             <!-- Start: Session Directory -->
@@ -398,6 +456,7 @@
                                 );
                                 box-shadow: 3px 1px 6px rgb(124, 129, 135),
                                 3px 1px 6px rgb(124, 129, 135);
+
                                 "
                                 >
                                 <!-- Start: View -->
@@ -435,9 +494,9 @@
                             </div>
                             <!-- End: Session Directory -->
                         </div>
-                        <div class="col">
+                        <div class="col" style=" right:18vw;">
                             <!-- Start: Doctor Channel Section -->
-                            <div class="doc-channel">
+                            <div class="doc-channel" >
                                 <label style="font-size: 31px; color: var(--blue)"
                                        >SESSION&nbsp;<span style="color: rgb(0, 0, 0)"
                                                     >DIRECTORY</span
