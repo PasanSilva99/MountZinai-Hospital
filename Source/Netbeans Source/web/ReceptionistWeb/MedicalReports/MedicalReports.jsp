@@ -432,6 +432,8 @@
                                     3px 1px 6px rgb(124, 129, 135);
                                     "
                                     >
+                                    
+                                    
                                     <!-- Start: Add -->
                                     <div class="add-text-lbl-mr">
                                         <span
@@ -449,7 +451,7 @@
                                         <span
                                             class="text-uppercase"
                                             style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >Patient</span
+                                            >Report</span
                                         >
                                     </div>
                                     <!-- End: Report -->

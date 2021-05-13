@@ -348,137 +348,147 @@
                                 <!-- End: Total Admitted Patients Card -->
                             </div>
                             <!-- End: Admitted Patient Card -->
-                            <!-- Start: Discharge Patent -->
-                            <div class="row discharge-patients-row">
-                                <!-- Start: Discharge Patient -->
-                                <div
-                                    class="col"
-                                    style="
-                                    background: linear-gradient(
-                                    -76deg,
-                                    #2f94fc,
-                                    rgb(47, 177, 255) 99%
-                                    );
-                                    border-radius: 19px;
-                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                    3px 1px 6px rgb(124, 129, 135);
-                                    "
-                                    >
-                                    <!-- Start: Discharge -->
-                                    <div class="discharge-text-lbl">
-                                        <span class="discharge-text">DISCHARGE</span>
-                                    </div>
-                                    <!-- End: Discharge -->
-                                    <!-- Start: Patient -->
-                                    <div class="patient-text-lbl">
-                                        <span
-                                            class="text-uppercase"
-                                            style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >Patient</span
+
+                            <a href="DischargePatientSearch.jsp" style="text-decoration:none;">
+                                <!-- Start: Discharge Patent -->
+                                <div class="row discharge-patients-row">
+                                    <!-- Start: Discharge Patient -->
+                                    <div
+                                        class="col"
+                                        style="
+                                        background: linear-gradient(
+                                        -76deg,
+                                        #2f94fc,
+                                        rgb(47, 177, 255) 99%
+                                        );
+                                        border-radius: 19px;
+                                        box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                        3px 1px 6px rgb(124, 129, 135);
+                                        "
                                         >
+                                        <!-- Start: Discharge -->
+                                        <div class="discharge-text-lbl">
+                                            <span class="discharge-text">DISCHARGE</span>
+                                        </div>
+                                        <!-- End: Discharge -->
+                                        <!-- Start: Patient -->
+                                        <div class="patient-text-lbl">
+                                            <span
+                                                class="text-uppercase"
+                                                style="color: rgb(255, 255, 255); font-size: 30px"
+                                                >Patient</span
+                                            >
+                                        </div>
+                                        <!-- End: Patient -->
+                                        <!-- Start: discahrge patient icon -->
+                                        <div class="discharge-patient-icon">
+                                            <img
+                                                class="discharge-icon"
+                                                src="../assets/img/discharge%20patient.svg"
+                                                style="filter: invert(100%); opacity: 0.8"
+                                                />
+                                        </div>
+                                        <!-- End: discahrge patient icon -->
                                     </div>
-                                    <!-- End: Patient -->
-                                    <!-- Start: discahrge patient icon -->
-                                    <div class="discharge-patient-icon">
-                                        <img
-                                            class="discharge-icon"
-                                            src="../assets/img/discharge%20patient.svg"
-                                            style="filter: invert(100%); opacity: 0.8"
-                                            />
-                                    </div>
-                                    <!-- End: discahrge patient icon -->
+                                    <!-- End: Discharge Patient -->
                                 </div>
-                                <!-- End: Discharge Patient -->
-                            </div>
-                            <!-- End: Discharge Patent -->
+                                <!-- End: Discharge Patent -->
+                            </a>
                         </div>
                         <div class="col">
                             <div class="mid-column">
-                                <!-- Start: All Patients Card -->
-                                <div
-                                    class="all-patient"
-                                    style="
-                                    background: linear-gradient(
-                                    24deg,
-                                    rgb(47, 148, 252) 23%,
-                                    rgb(142, 223, 249) 100%
-                                    );
-                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                    3px 1px 6px rgb(124, 129, 135);
-                                    "
-                                    >
-                                    <!-- Start: All -->
+
+                                <a href="AllAdmittedPatients.jsp" style="text-decoration:none;">
+                                    <!-- Start: All Patients Card -->
                                     <div
-                                        class="all-text-lbl"
-                                        style="position: relative; left: 2vw; top: 2vh"
+                                        class="all-patient"
+                                        style="
+                                        background: linear-gradient(
+                                        24deg,
+                                        rgb(47, 148, 252) 23%,
+                                        rgb(142, 223, 249) 100%
+                                        );
+                                        box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                        3px 1px 6px rgb(124, 129, 135);
+                                        "
                                         >
-                                        <span
-                                            style="
-                                            font-size: 57px;
-                                            color: rgb(255, 255, 255);
-                                            text-align: left;
-                                            "
-                                            >ALL</span
-                                        >
+                                        <!-- Start: All -->
+                                        <div
+                                            class="all-text-lbl"
+                                            style="position: relative; left: 2vw; top: 2vh"
+                                            >
+                                            <span
+                                                style="
+                                                font-size: 57px;
+                                                color: rgb(255, 255, 255);
+                                                text-align: left;
+                                                "
+                                                >ALL</span
+                                            >
+                                        </div>
+                                        <!-- End: All -->
+                                        <!-- Start: Patients -->
+                                        <div class="patients-text-lbl">
+                                            <span
+                                                class="text-uppercase"
+                                                style="color: rgb(255, 255, 255); font-size: 30px"
+                                                >Patients</span
+                                            >
+                                        </div>
+                                        <!-- End: Patients -->
+                                        <!-- Start: All Patients Icon -->
+                                        <div>
+                                            <img
+                                                class="all-patients-icon"
+                                                src="../assets/img/patient.svg"
+                                                style="filter: invert(100%)"
+                                                />
+                                        </div>
+                                        <!-- End: All Patients Icon -->
                                     </div>
-                                    <!-- End: All -->
-                                    <!-- Start: Patients -->
-                                    <div class="patients-text-lbl">
-                                        <span
-                                            class="text-uppercase"
-                                            style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >Patients</span
-                                        >
-                                    </div>
-                                    <!-- End: Patients -->
-                                    <!-- Start: All Patients Icon -->
-                                    <div>
-                                        <img
-                                            class="all-patients-icon"
-                                            src="../assets/img/patient.svg"
-                                            style="filter: invert(100%)"
-                                            />
-                                    </div>
-                                    <!-- End: All Patients Icon -->
-                                </div>
+                                </a>
+
                                 <!-- End: All Patients Card -->
-                                <!-- Start: Add Patient Card -->
-                                <div
-                                    class="add-patient"
-                                    style="
-                                    background: linear-gradient(
-                                    118deg,
-                                    rgb(47, 148, 252) 0%,
-                                    rgb(142, 223, 249) 121%
-                                    );
-                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                    3px 1px 6px rgb(124, 129, 135);
-                                    "
-                                    >
-                                    <!-- Start: Admit -->
-                                    <div class="admit-text-lbl">
-                                        <span class="admit-text">ADMIT</span>
-                                    </div>
-                                    <!-- End: Admit -->
-                                    <!-- Start: Patient -->
-                                    <div class="admit-patient-text-lbl">
-                                        <span
-                                            class="text-uppercase"
-                                            style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >Patient</span
+
+                                <a href="AddNewPatient.jsp" style="text-decoration:none;">
+                                    <!-- Start: Add Patient Card -->
+                                    <div
+                                        class="add-patient"
+                                        style="
+                                        background: linear-gradient(
+                                        118deg,
+                                        rgb(47, 148, 252) 0%,
+                                        rgb(142, 223, 249) 121%
+                                        );
+                                        box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                        3px 1px 6px rgb(124, 129, 135);
+                                        "
                                         >
+                                        <!-- Start: Admit -->
+                                        <div class="admit-text-lbl">
+                                            <span class="admit-text">ADMIT</span>
+                                        </div>
+                                        <!-- End: Admit -->
+                                        <!-- Start: Patient -->
+                                        <div class="admit-patient-text-lbl">
+                                            <span
+                                                class="text-uppercase"
+                                                style="color: rgb(255, 255, 255); font-size: 30px"
+                                                >Patient</span
+                                            >
+                                        </div>
+                                        <!-- End: Patient -->
+                                        <!-- Start: All Patients Icon -->
+                                        <div>
+                                            <img
+                                                class="all-patients-icon"
+                                                src="../assets/img/add-patient.svg"
+                                                style="filter: invert(100%)"
+                                                />
+                                        </div>
+                                        <!-- End: All Patients Icon -->
                                     </div>
-                                    <!-- End: Patient -->
-                                    <!-- Start: All Patients Icon -->
-                                    <div>
-                                        <img
-                                            class="all-patients-icon"
-                                            src="../assets/img/add-patient.svg"
-                                            style="filter: invert(100%)"
-                                            />
-                                    </div>
-                                    <!-- End: All Patients Icon -->
-                                </div>
+                                </a>
                                 <!-- End: Add Patient Card -->
                                 <!-- Start: Find A Patient Section -->
                                 <div
