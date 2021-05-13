@@ -9,6 +9,10 @@ import Model.DoctorBean;
 import Model.DBConString;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,10 +26,10 @@ public class DoctorFunctions {
     public boolean AddDoctor(DoctorBean doctor)
     {
         DoctorBean Doctor = doctor;
-        
+        Connection con = null;
         try
         {
-            Connection con = DB.CreateConnection();
+            con = DB.CreateConnection();
             String sql = "INSERT INTO doctor VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement AddDoc = con.prepareStatement(sql);
             AddDoc.setString(1, Doctor.getNIC());
@@ -52,6 +56,15 @@ public class DoctorFunctions {
         {
             e.printStackTrace();
         }
+        finally
+        {
+            try {
+                if(!con.isClosed())
+                con.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
         
         return false;
         
@@ -60,10 +73,10 @@ public class DoctorFunctions {
     public boolean UpdateDoctor(DoctorBean doctor)
     {
         DoctorBean Doctor = doctor;
-        
+        Connection con = null;
         try
         {
-            Connection con = DB.CreateConnection();
+            con = DB.CreateConnection();
             String sql = ""
                     + "UPDATE "
                         + "doctor "
@@ -111,6 +124,15 @@ public class DoctorFunctions {
         {
             e.printStackTrace();
         }
+        finally
+        {
+            try {
+                if(!con.isClosed())
+                con.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
         
         return false;
         
@@ -118,9 +140,10 @@ public class DoctorFunctions {
     
     public boolean RemoveDoctor(String NIC)
     {
+        Connection con = null;
         try
         {
-            Connection con = DB.CreateConnection();
+            con = DB.CreateConnection();
             String sql = "DELETE FROM doctor WHERE NIC =?";
             PreparedStatement AddDoc = con.prepareStatement(sql);
             AddDoc.setString(1, NIC);
@@ -134,13 +157,127 @@ public class DoctorFunctions {
         {
             e.printStackTrace();
         }
+        finally
+        {
+            try {
+                if(!con.isClosed())
+                con.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
         
         return false;
     }
     
+    public DoctorBean[] FetchAllDoctors()
+    {
+        List<DoctorBean> Doctors = new ArrayList<>();
+        Connection con = null;
+        try
+        {
+            con = DB.CreateConnection();
+            String sql = "SELECT * FROM doctor";
+            PreparedStatement FetchDoctors = con.prepareStatement(sql);
+            
+            ResultSet rs = FetchDoctors.executeQuery();
+            
+            while(rs.next())
+            {
+                DoctorBean Doctor= new DoctorBean(
+                rs.getString(1),
+                rs.getString(2),
+                rs.getString(3),
+                rs.getString(4),
+                rs.getString(5),
+                rs.getString(6),
+                rs.getString(7),
+                rs.getString(8),
+                rs.getString(9),
+                rs.getString(10),
+                rs.getString(11),
+                rs.getString(12),
+                rs.getString(13),
+                rs.getString(14));
+                
+                Doctors.add(Doctor);
+            }
+
+            return Doctors.toArray(new DoctorBean[Doctors.size()]);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            try 
+            {
+                if(!con.isClosed()) {
+                    con.close();
+                } else {
+                }
+            } 
+            catch (SQLException ex) 
+            {
+                ex.printStackTrace();
+            }
+        }
+        
+        return null;
+    }
+    
     public DoctorBean FindDoctor(String NIC)
     {
-        DoctorBean Doctor = new DoctorBean();
+        Connection con = null;
+        try
+        {
+            con = DB.CreateConnection();
+            String sql = "SELECT * FROM doctor WHERE NIC =?";
+            PreparedStatement FindDoc = con.prepareStatement(sql);
+            FindDoc.setString(1, NIC);
+            
+            ResultSet rs = FindDoc.executeQuery();
+            
+            if(rs.next())
+            {
+                DoctorBean Doctor= new DoctorBean(
+                rs.getString(1),
+                rs.getString(2),
+                rs.getString(3),
+                rs.getString(4),
+                rs.getString(5),
+                rs.getString(6),
+                rs.getString(7),
+                rs.getString(8),
+                rs.getString(9),
+                rs.getString(10),
+                rs.getString(11),
+                rs.getString(12),
+                rs.getString(13),
+                rs.getString(14));
+                
+                return Doctor;
+            }
+
+            
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            try {
+                if(!con.isClosed())
+                con.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+        
+        return null;
+        
     }
     
     

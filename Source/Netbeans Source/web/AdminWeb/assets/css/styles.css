@@ -358,4 +358,10 @@ textWhite {
   margin-top: -8px;
 }
 
+.error-input{
+  font-size: 12px;
+  margin-left: 20px;
+  color: red;
+}
+
 
