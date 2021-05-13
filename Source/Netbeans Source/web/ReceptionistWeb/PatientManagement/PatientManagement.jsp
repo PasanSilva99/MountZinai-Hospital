@@ -352,646 +352,653 @@
                         </div>
                         <div class="col">
                             <div class="mid-column">
-                                <!-- Start: All Patients Card -->
-                                <div
-                                    class="all-patient"
-                                    style="
-                                    background: linear-gradient(
-                                    24deg,
-                                    rgb(47, 148, 252) 23%,
-                                    rgb(142, 223, 249) 100%
-                                    );
-                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                    3px 1px 6px rgb(124, 129, 135);
-                                    "
-                                    >
-                                    <!-- Start: All -->
-                                    <div class="all-text-lbl" style="left: 2vw; top: 1vh">
-                                        <span
-                                            style="
-                                            font-size: 57px;
-                                            color: rgb(255, 255, 255);
-                                            text-align: left;
-                                            "
-                                            >ALL</span
+
+                                <a href="AllPatients.jsp" style="text-decoration:none;">
+                                    <!-- Start: All Patients Card -->
+                                    <div
+                                        class="all-patient"
+                                        style="
+                                        background: linear-gradient(
+                                        24deg,
+                                        rgb(47, 148, 252) 23%,
+                                        rgb(142, 223, 249) 100%
+                                        );
+                                        box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                        3px 1px 6px rgb(124, 129, 135);
+                                        "
                                         >
+                                        <!-- Start: All -->
+                                        <div class="all-text-lbl" style="left: 2vw; top: 1vh">
+                                            <span
+                                                style="
+                                                font-size: 57px;
+                                                color: rgb(255, 255, 255);
+                                                text-align: left;
+                                                "
+                                                >ALL</span
+                                            >
+                                        </div>
+                                        <!-- End: All -->
+                                        <!-- Start: Patients -->
+                                        <div class="patients-text-lbl">
+                                            <span
+                                                class="text-uppercase"
+                                                style="color: rgb(255, 255, 255); font-size: 30px"
+                                                >Patients</span
+                                            >
+                                        </div>
+                                        <!-- End: Patients -->
+                                        <!-- Start: All Patients Icon -->
+                                        <div>
+                                            <img
+                                                class="all-patients-icon"
+                                                src="../assets/img/patient.svg"
+                                                style="filter: invert(100%)"
+                                                />
+                                        </div>
+                                        <!-- End: All Patients Icon -->
                                     </div>
-                                    <!-- End: All -->
-                                    <!-- Start: Patients -->
-                                    <div class="patients-text-lbl">
-                                        <span
-                                            class="text-uppercase"
-                                            style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >Patients</span
-                                        >
-                                    </div>
-                                    <!-- End: Patients -->
-                                    <!-- Start: All Patients Icon -->
-                                    <div>
-                                        <img
-                                            class="all-patients-icon"
-                                            src="../assets/img/patient.svg"
-                                            style="filter: invert(100%)"
-                                            />
-                                    </div>
-                                    <!-- End: All Patients Icon -->
-                                </div>
+                                </a>
+
                                 <!-- End: All Patients Card -->
-                                <!-- Start: Add Patient Card -->
-                                <div
-                                    class="add-patient"
-                                    style="
-                                    background: linear-gradient(
-                                    118deg,
-                                    rgb(47, 148, 252) 0%,
-                                    rgb(142, 223, 249) 121%
-                                    );
-                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                    3px 1px 6px rgb(124, 129, 135);
-                                    "
-                                    >
-                                    <!-- Start: Add -->
-                                    <div class="add-text-lbl">
-                                        <span
-                                            style="
-                                            font-size: 57px;
-                                            color: rgb(255, 255, 255);
-                                            text-align: left;
-                                            "
-                                            >ADD</span
+
+                                <a href="AddPatient.jsp" style="text-decoration:none;">
+                                    <!-- Start: Add Patient Card -->
+                                    <div
+                                        class="add-patient"
+                                        style="
+                                        background: linear-gradient(
+                                        118deg,
+                                        rgb(47, 148, 252) 0%,
+                                        rgb(142, 223, 249) 121%
+                                        );
+                                        box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                        3px 1px 6px rgb(124, 129, 135);
+                                        "
                                         >
-                                    </div>
-                                    <!-- End: Add -->
-                                    <!-- Start: Patient -->
-                                    <div class="patients-text-lbl">
-                                        <span
-                                            class="text-uppercase"
-                                            style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >Patient</span
-                                        >
-                                    </div>
-                                    <!-- End: Patient -->
-                                    <!-- Start: All Patients Icon -->
-                                    <div>
-                                        <img
-                                            class="all-patients-icon"
-                                            src="../assets/img/add-patient.svg"
-                                            style="filter: invert(100%)"
-                                            />
-                                    </div>
-                                    <!-- End: All Patients Icon -->
+                                        <!-- Start: Add -->
+                                        <div class="add-text-lbl">
+                                            <span
+                                                style="
+                                                font-size: 57px;
+                                                color: rgb(255, 255, 255);
+                                                text-align: left;
+                                                "
+                                                >ADD</span
+                                            >
+                                        </div>
+                                        <!-- End: Add -->
+                                        <!-- Start: Patient -->
+                                        <div class="patients-text-lbl">
+                                            <span
+                                                class="text-uppercase"
+                                                style="color: rgb(255, 255, 255); font-size: 30px"
+                                                >Patient</span
+                                            >
+                                        </div>
+                                </a>
+                                <!-- End: Patient -->
+                                <!-- Start: All Patients Icon -->
+                                <div>
+                                    <img
+                                        class="all-patients-icon"
+                                        src="../assets/img/add-patient.svg"
+                                        style="filter: invert(100%)"
+                                        />
                                 </div>
-                                <!-- End: Add Patient Card -->
-                                <!-- Start: Find A Patient Section -->
-                                <div
-                                    class="find-patient"
-                                    style="
-                                    background: linear-gradient(
-                                    51deg,
-                                    rgb(47, 177, 255) 0%,
-                                    #2fb1ff 100%
-                                    );
-                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                    3px 1px 6px rgb(124, 129, 135);
-                                    "
-                                    >
-                                    <!-- Start: Find A -->
-                                    <div class="add-text-lbl">
-                                        <span
-                                            style="
-                                            font-size: 57px;
-                                            color: rgb(255, 255, 255);
-                                            text-align: left;
-                                            "
-                                            >FIND A</span
-                                        >
-                                    </div>
-                                    <!-- End: Find A -->
-                                    <!-- Start: Patient -->
-                                    <div class="patients-text-lbl">
-                                        <span
-                                            class="text-uppercase"
-                                            style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >Patient</span
-                                        >
-                                    </div>
-                                    <!-- End: Patient -->
-                                    <!-- Start: Search Section -->
-                                    <div class="search-field">
-                                        <input
-                                            class="form-control-lg search-field-length"
-                                            type="search"
-                                            placeholder="        Patient Name"
-                                            style="
-                                            width: 301.4px;
-                                            background: #43a7df;
-                                            color: rgb(255, 255, 255);
-                                            opacity: 1;
-                                            "
-                                            />
-                                    </div>
-                                    <!-- End: Search Section -->
-                                    <!-- Start: Patient Icon -->
-                                    <div>
-                                        <img
-                                            class="user-name-new"
-                                            src="../assets/img/patient-new.svg"
-                                            style="filter: invert(100%)"
-                                            />
-                                    </div>
-                                    <!-- End: Patient Icon -->
-                                    <!-- Start: Search Icon -->
-                                    <div>
-                                        <img
-                                            class="search-icon"
-                                            src="../assets/img/search.svg"
-                                            style="filter: invert(100%); opacity: 0.72"
-                                            />
-                                    </div>
-                                    <!-- End: Search Icon -->
-                                </div>
-                                <!-- End: Find A Patient Section -->
+                                <!-- End: All Patients Icon -->
                             </div>
-                        </div>
-                        <div class="col-xl-5">
+                            <!-- End: Add Patient Card -->
+                            <!-- Start: Find A Patient Section -->
                             <div
-                                class="WidgetGray"
+                                class="find-patient"
                                 style="
-                                height: 95%;
-                                position: absolute;
-                                width: 95%;
-                                bottom: 0;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                margin: 5px;
+                                background: linear-gradient(
+                                51deg,
+                                rgb(47, 177, 255) 0%,
+                                #2fb1ff 100%
+                                );
+                                box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                3px 1px 6px rgb(124, 129, 135);
                                 "
                                 >
-                                <span
-                                    class="text-left WidgetTitleSmall"
-                                    style="margin-left: 25px; font-size: 21px"
-                                    >Recently Registered Patients</span
-                                ><!-- Start: List Description Names -->
-                                <div class="descriptive-lbl">
-                                    <!-- Start: Name Label -->
-                                    <div class="name-lbl"><label>Name</label></div>
-                                    <!-- End: Name Label -->
-                                    <!-- Start: NIC Label -->
-                                    <div class="nic-lbl"><label>NIC</label></div>
-                                    <!-- End: NIC Label -->
-                                </div>
-                                <!-- End: List Description Names -->
-                                <div
-                                    class="d-block"
-                                    style="
-                                    height: 90%;
-                                    overflow: scroll;
-                                    margin-left: 28px;
-                                    margin-top: 10px;
-                                    "
+                                <!-- Start: Find A -->
+                                <div class="add-text-lbl">
+                                    <span
+                                        style="
+                                        font-size: 57px;
+                                        color: rgb(255, 255, 255);
+                                        text-align: left;
+                                        "
+                                        >FIND A</span
                                     >
-                                    <div></div>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr></tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                    <!-- Start: 1st row -->
-                                                    <td class="listItem">
-                                                        <div
-                                                            class="d-flex flex-row listItemBg"
-                                                            style="width: 100%"
-                                                            >
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="width: 45px; height: 100%; padding: 5px"
-                                                                >
-                                                                <img
-                                                                    class="img-fluid"
-                                                                    src="../assets/img/profile.svg"
-                                                                    />
-                                                            </div>
-                                                            <div
-                                                                class="d-xl-flex align-items-xl-center"
-                                                                style="height: 100%; width: 45%"
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 6px"
-                                                                      >C. H. P. A. Silva</span
-                                                                >
-                                                            </div>
-                                                            <div
-                                                                class="
-                                                                d-xl-flex
-                                                                justify-content-xl-end
-                                                                align-items-xl-center
-                                                                "
-                                                                style="
-                                                                height: 100%;
-                                                                margin-right: 15px;
-                                                                width: 100%;
-                                                                text-align: right;
-                                                                "
-                                                                >
-                                                                <span style="font-size: 12px; margin-left: 7px"
-                                                                      >973102729V</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <!-- End: 1st row -->
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
                                 </div>
-                                <div
-                                    class="
-                                    d-xl-flex
-                                    justify-content-xl-center
-                                    align-items-xl-center
-                                    showAll
-                                    "
+                                <!-- End: Find A -->
+                                <!-- Start: Patient -->
+                                <div class="patients-text-lbl">
+                                    <span
+                                        class="text-uppercase"
+                                        style="color: rgb(255, 255, 255); font-size: 30px"
+                                        >Patient</span
                                     >
-                                    <span>Show All</span>
                                 </div>
+                                <!-- End: Patient -->
+                                <!-- Start: Search Section -->
+                                <div class="search-field">
+                                    <input
+                                        class="form-control-lg search-field-length"
+                                        type="search"
+                                        placeholder="        Patient Name"
+                                        style="
+                                        width: 301.4px;
+                                        background: #43a7df;
+                                        color: rgb(255, 255, 255);
+                                        opacity: 1;
+                                        "
+                                        />
+                                </div>
+                                <!-- End: Search Section -->
+                                <!-- Start: Patient Icon -->
+                                <div>
+                                    <img
+                                        class="user-name-new"
+                                        src="../assets/img/patient-new.svg"
+                                        style="filter: invert(100%)"
+                                        />
+                                </div>
+                                <!-- End: Patient Icon -->
+                                <!-- Start: Search Icon -->
+                                <div>
+                                    <img
+                                        class="search-icon"
+                                        src="../assets/img/search.svg"
+                                        style="filter: invert(100%); opacity: 0.72"
+                                        />
+                                </div>
+                                <!-- End: Search Icon -->
+                            </div>
+                            <!-- End: Find A Patient Section -->
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div
+                            class="WidgetGray"
+                            style="
+                            height: 95%;
+                            position: absolute;
+                            width: 95%;
+                            bottom: 0;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            margin: 5px;
+                            "
+                            >
+                            <span
+                                class="text-left WidgetTitleSmall"
+                                style="margin-left: 25px; font-size: 21px"
+                                >Recently Registered Patients</span
+                            ><!-- Start: List Description Names -->
+                            <div class="descriptive-lbl">
+                                <!-- Start: Name Label -->
+                                <div class="name-lbl"><label>Name</label></div>
+                                <!-- End: Name Label -->
+                                <!-- Start: NIC Label -->
+                                <div class="nic-lbl"><label>NIC</label></div>
+                                <!-- End: NIC Label -->
+                            </div>
+                            <!-- End: List Description Names -->
+                            <div
+                                class="d-block"
+                                style="
+                                height: 90%;
+                                overflow: scroll;
+                                margin-left: 28px;
+                                margin-top: 10px;
+                                "
+                                >
+                                <div></div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                                <!-- Start: 1st row -->
+                                                <td class="listItem">
+                                                    <div
+                                                        class="d-flex flex-row listItemBg"
+                                                        style="width: 100%"
+                                                        >
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="width: 45px; height: 100%; padding: 5px"
+                                                            >
+                                                            <img
+                                                                class="img-fluid"
+                                                                src="../assets/img/profile.svg"
+                                                                />
+                                                        </div>
+                                                        <div
+                                                            class="d-xl-flex align-items-xl-center"
+                                                            style="height: 100%; width: 45%"
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 6px"
+                                                                  >C. H. P. A. Silva</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="
+                                                            d-xl-flex
+                                                            justify-content-xl-end
+                                                            align-items-xl-center
+                                                            "
+                                                            style="
+                                                            height: 100%;
+                                                            margin-right: 15px;
+                                                            width: 100%;
+                                                            text-align: right;
+                                                            "
+                                                            >
+                                                            <span style="font-size: 12px; margin-left: 7px"
+                                                                  >973102729V</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- End: 1st row -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                d-xl-flex
+                                justify-content-xl-center
+                                align-items-xl-center
+                                showAll
+                                "
+                                >
+                                <span>Show All</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End: Side Navigation + Page -->
-        <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-        <script>
-            var interval = setInterval(UpdateTime, 1000);
+        </div>
+    </section>
+    <!-- End: Side Navigation + Page -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var interval = setInterval(UpdateTime, 1000);
 
-            function UpdateTime() {
-                var dateObj = new Date();
-                var day = ConvDay(dateObj.getDay());
-                var date = FixLength(dateObj.getDate());
-                var hour = FixLength(dateObj.getHours());
-                var minute = FixLength(dateObj.getMinutes());
-                var dateSuffix = GetDateSuffix(date);
+        function UpdateTime() {
+            var dateObj = new Date();
+            var day = ConvDay(dateObj.getDay());
+            var date = FixLength(dateObj.getDate());
+            var hour = FixLength(dateObj.getHours());
+            var minute = FixLength(dateObj.getMinutes());
+            var dateSuffix = GetDateSuffix(date);
 
-                document.getElementById("lbl_day").innerHTML = day;
-                document.getElementById("lbl_date").innerHTML = date;
-                document.getElementById("lbl_dateSuffix").innerHTML = dateSuffix;
-                document.getElementById("lbl_timeHour").innerHTML = hour;
-                document.getElementById("lbl_timeMinute").innerHTML = minute;
+            document.getElementById("lbl_day").innerHTML = day;
+            document.getElementById("lbl_date").innerHTML = date;
+            document.getElementById("lbl_dateSuffix").innerHTML = dateSuffix;
+            document.getElementById("lbl_timeHour").innerHTML = hour;
+            document.getElementById("lbl_timeMinute").innerHTML = minute;
+        }
+
+        function FixLength(n) {
+            if (n < 10)
+                return "0" + n;
+            else
+                return n;
+        }
+
+        function GetDateSuffix(d) {
+            switch (d) {
+                case 1:
+                    return "st";
+                    break;
+                case 2:
+                    return "nd";
+                    break;
+                case 3:
+                    return "rd";
+                    break;
+                default:
+                    return "th";
             }
+        }
 
-            function FixLength(n) {
-                if (n < 10)
-                    return "0" + n;
-                else
-                    return n;
+        function ConvDay(d) {
+            switch (d) {
+                case 0:
+                    return "Sunday";
+                    break;
+                case 1:
+                    return "Monday";
+                    break;
+                case 2:
+                    return "Tuesday";
+                    break;
+                case 3:
+                    return "Wednesday";
+                    break;
+                case 4:
+                    return "Thursday";
+                    break;
+                case 5:
+                    return "Friday";
+                    break;
+                case 6:
+                    return "Saturday";
+                    break;
             }
-
-            function GetDateSuffix(d) {
-                switch (d) {
-                    case 1:
-                        return "st";
-                        break;
-                    case 2:
-                        return "nd";
-                        break;
-                    case 3:
-                        return "rd";
-                        break;
-                    default:
-                        return "th";
-                }
-            }
-
-            function ConvDay(d) {
-                switch (d) {
-                    case 0:
-                        return "Sunday";
-                        break;
-                    case 1:
-                        return "Monday";
-                        break;
-                    case 2:
-                        return "Tuesday";
-                        break;
-                    case 3:
-                        return "Wednesday";
-                        break;
-                    case 4:
-                        return "Thursday";
-                        break;
-                    case 5:
-                        return "Friday";
-                        break;
-                    case 6:
-                        return "Saturday";
-                        break;
-                }
-            }
-        </script>
-    </body>
+        }
+    </script>
+</body>
 </html>

@@ -37,7 +37,7 @@
                     <img
                         class="img-fluid"
                         id="logo"
-                        src="assets/img/MountZinai%20Hospital%20Logo.png"
+                        src="../assets/img/MountZinai%20Hospital%20Logo.png"
                         />
                 </div>
                 <span id="greetingText" style="font-size: 31px">Hello A S D Silva</span>
@@ -105,8 +105,12 @@
                 <img
                     class="img-fluid"
                     id="notificationIcon"
-                    src="assets/img/bell.svg"
-                    /><img class="img-fluid" id="userImage" src="assets/img/profile.svg" />
+                    src="./assets/img/bell.svg"
+                    /><img
+                    class="img-fluid"
+                    id="userImage"
+                    src="./assets/img/receptionist.svg"
+                    />
             </div>
         </section>
         <!-- Start: Side Navigation + Page -->
