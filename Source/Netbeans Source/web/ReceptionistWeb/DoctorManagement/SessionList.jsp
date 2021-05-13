@@ -7,41 +7,33 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
             />
-        <title>MountZinai Patient Dashboard UI</title>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/Back-Btn.css" />
-        <link rel="stylesheet" href="assets/css/List-Component-1.css" />
-        <link rel="stylesheet" href="assets/css/List-Component.css" />
-        <link rel="stylesheet" href="assets/css/Mount-Zinai-Top-Navigation.css" />
-        <link rel="stylesheet" href="assets/css/My-Back-Btn.css" />
+        <title>MountZinai Receptionist Dashboard</title>
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../assets/css/All-Patient-Component.css" />
+        <link rel="stylesheet" href="../assets/css/Back-Btn.css" />
+        <link rel="stylesheet" href="../assets/css/Doctor-Add.css" />
+        <link rel="stylesheet" href="../assets/css/Edit-btn.css" />
         <link
             rel="stylesheet"
-            href="assets/css/My-Customized-Top-Navigation-MZ.css"
+            href="../assets/css/Mount-Zinai-Top-Navigation.css"
             />
-        <link rel="stylesheet" href="assets/css/Recently-Uploaded-Document.css" />
-        <link rel="stylesheet" href="assets/css/Session-List.css" />
-        <link rel="stylesheet" href="assets/css/Side-Navigation--Page.css" />
-        <link rel="stylesheet" href="assets/css/styles.css" />
-
-        <style>
-            a {
-                color: inherit;
-            }
-        </style>
+        <link rel="stylesheet" href="../assets/css/Side-Navigation--Page.css" />
+        <link rel="stylesheet" href="../assets/css/Staff-List-View.css" />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/Toggle-Switch.css" />
     </head>
 
     <body>
+        <!-- Start Top Navigation -->
         <section>
             <div id="topNav">
-                <a href="PatientDashboard.jsp" style="text-decoration: none">
-                    <div>
-                        <img
-                            class="img-fluid"
-                            id="logo"
-                            src="assets/img/MountZinai%20Hospital%20Logo.png"
-                            />
-                    </div>
-                </a>
+                <div>
+                    <img
+                        class="img-fluid"
+                        id="logo"
+                        src="../assets/img/MountZinai%20Hospital%20Logo.png"
+                        />
+                </div>
                 <span id="greetingText" style="font-size: 31px">Hello A S D Silva</span>
                 <div
                     class="d-inline-flex float-left justify-content-start card-position"
@@ -107,137 +99,211 @@
                 <img
                     class="img-fluid"
                     id="notificationIcon"
-                    src="assets/img/bell.svg"
-                    /><img class="img-fluid" id="userImage" src="assets/img/profile.svg" />
+                    src="../assets/img/bell.svg"
+                    /><img
+                    class="img-fluid"
+                    id="userImage"
+                    src="../assets/img/receptionist.svg"
+                    />
             </div>
         </section>
+        <!-- Start: Side Navigation + Page -->
         <section class="pagecont">
             <div class="fillPage">
                 <div id="sideNav">
-
-                    <!--Side Navigation - Dashboard--> 
-                    <a href="PatientDashboard.jsp" style="text-decoration: none;">
-                        <div class="navItem">
+                    <div class="navItem">
+                        <div
+                            class="NavItemBg-nonActive"
+                            style="
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            filter: invert(0%);
+                            "
+                            ></div>
+                        <img
+                            class="NavItemImage-nonActive"
+                            style="
+                            width: 35px;
+                            height: 35px;
+                            margin-left: 28%;
+                            margin-right: auto;
+                            position: relative;
+                            "
+                            src="../assets/img/dashboard.svg"
+                            /><span
+                            class="NavItemText-nonActive"
+                            style="
+                            width: 100%;
+                            text-align: center;
+                            display: block;
+                            position: relative;
+                            "
+                            >Dashboard</span
+                        >
+                    </div>
+                    <div class="navItem">
+                        <div
+                            class="NavItemBg-nonActive"
+                            style="position: absolute; width: 100%; height: 100%"
+                            ></div>
+                        <img
+                            class="NavItemImage-nonActive"
+                            style="
+                            width: 35px;
+                            height: 35px;
+                            margin-left: 30%;
+                            margin-right: auto;
+                            position: relative;
+                            margin-top: 12%;
+                            "
+                            src="../assets/img/add%20Appointment.svg"
+                            /><span
+                            class="NavItemText-nonActive"
+                            style="
+                            width: 100%;
+                            text-align: center;
+                            display: block;
+                            position: relative;
+                            "
+                            >Appointment<br />Management</span
+                        >
+                    </div>
+                    <div class="navItem">
+                        <div style="position: absolute; width: 100%; height: 100%">
                             <div
                                 class="NavItemBg-nonActive"
                                 style="position: absolute; width: 100%; height: 100%"
                                 ></div>
-                            <img
-                                class="NavItemImage"
-                                style="
-                                width: 35px;
-                                height: 35px;
-                                margin-left: 28%;
-                                margin-right: auto;
-                                position: relative;
-                                filter: invert(0%);
-                                "
-                                src="assets/img/dashboard.svg"
-                                />
-                            <span
-                                class="NavItemText"
-                                style="
-                                width: 100%;
-                                text-align: center;
-                                display: block;
-                                position: relative;
-                                filter: invert(0%);
-                                color: rgb(0, 0, 0);
-                                "
-                                >
-                                Dashboard
-                            </span>
                         </div>
-                    </a>
-
-                    <!--Side Navigation - My Appointments--> 
-                    <a href="MyAppointments.jsp" style="text-decoration: none;">
-                        <div class="navItem">
+                        <img
+                            class="NavItemImage-nonActive"
+                            style="
+                            width: 35px;
+                            height: 35px;
+                            margin-left: 33%;
+                            margin-right: auto;
+                            position: relative;
+                            margin-top: 12%;
+                            "
+                            src="../assets/img/patient.svg"
+                            /><span
+                            class="NavItemText-nonActive"
+                            style="
+                            width: 100%;
+                            text-align: center;
+                            display: block;
+                            position: relative;
+                            "
+                            >Patient<br />Management</span
+                        >
+                    </div>
+                    <div class="navItem">
+                        <div style="position: absolute; width: 100%; height: 100%">
+                            <div
+                                class="NavItemBg-nonActive"
+                                style="position: absolute; width: 100%; height: 100%"
+                                ></div>
+                        </div>
+                        <img
+                            class="NavItemImage-nonActive"
+                            style="
+                            width: 35px;
+                            height: 35px;
+                            margin-left: 29%;
+                            margin-right: auto;
+                            position: relative;
+                            margin-top: 12%;
+                            "
+                            src="../assets/img/blood-transfusion.svg"
+                            /><span
+                            class="NavItemText-nonActive"
+                            style="
+                            width: 100%;
+                            text-align: center;
+                            display: block;
+                            position: relative;
+                            "
+                            >Admit<br />Patient</span
+                        >
+                    </div>
+                    <div class="navItem">
+                        <div style="position: absolute; width: 100%; height: 100%">
                             <div
                                 class="NavItemBg"
                                 style="position: absolute; width: 100%; height: 100%"
                                 ></div>
-                            <img
-                                class="NavItemImage"
-                                style="
-                                width: 35px;
-                                height: 35px;
-                                margin-left: 30%;
-                                margin-right: auto;
-                                position: relative;
-                                margin-top: 12%;
-                                filter: invert(100%);
-                                "
-                                src="assets/img/calendar.svg"
-                                /><span
-                                class="NavItemText"
-                                style="
-                                width: 100%;
-                                text-align: center;
-                                display: block;
-                                position: relative;
-                                filter: invert(0%);
-                                color: rgb(255, 255, 255);
-                                "
-                                >My<br />Appointments</span
-                            >
                         </div>
-                    </a>
-
-                    <!--Side Navigation - SavedDocuments--> 
-                    <a href="SavedDocuments.jsp" style="text-decoration: none;">
-                        <div class="navItem">
-                            <div style="position: absolute; width: 100%; height: 100%">
-                                <div
-                                    class="NavItemBg-nonActive"
-                                    style="position: absolute; width: 100%; height: 100%"
-                                    ></div>
-                            </div>
-                            <img
-                                class="NavItemImage-nonActive"
-                                style="
-                                width: 35px;
-                                height: 35px;
-                                margin-left: 33%;
-                                margin-right: auto;
-                                position: relative;
-                                margin-top: 12%;
-                                "
-                                src="assets/img/dossier.svg"
-                                /><span
-                                class="NavItemText-nonActive"
-                                style="
-                                width: 100%;
-                                text-align: center;
-                                display: block;
-                                position: relative;
-                                "
-                                >Saved<br />Documents</span
-                            >
+                        <img
+                            class="NavItemImage"
+                            style="
+                            width: 35px;
+                            height: 35px;
+                            margin-left: 29%;
+                            margin-right: auto;
+                            position: relative;
+                            margin-top: 12%;
+                            "
+                            src="../assets/img/doctor.svg"
+                            /><span
+                            class="NavItemText"
+                            style="
+                            width: 100%;
+                            text-align: center;
+                            display: block;
+                            position: relative;
+                            "
+                            >Doctor<br />Management</span
+                        >
+                    </div>
+                    <div class="navItem">
+                        <div style="position: absolute; width: 100%; height: 100%">
+                            <div
+                                class="NavItemBg-nonActive"
+                                style="position: absolute; width: 100%; height: 100%"
+                                ></div>
                         </div>
-                    </a>
+                        <img
+                            class="NavItemImage-nonActive"
+                            style="
+                            width: 35px;
+                            height: 35px;
+                            margin-left: 29%;
+                            margin-right: auto;
+                            position: relative;
+                            margin-top: 12%;
+                            "
+                            src="../assets/img/medical-record.svg"
+                            /><span
+                            class="NavItemText-nonActive"
+                            style="
+                            width: 100%;
+                            text-align: center;
+                            display: block;
+                            position: relative;
+                            "
+                            >Medical<br />Reports</span
+                        >
+                    </div>
                 </div>
                 <div id="page">
-                    <!-- Start: 1 Row 2 Columns -->
-                    <div class="container" style="display: block; height: 100%">
-                        <!-- Start: Session List -->
+                    <div class="row">
                         <div
                             class="col WidgetGray"
-                            style="
-                            display: block;
-                            height: 488px;
-                            width: 100%;
-                            position: relative;
-                            top: 9vh;
-                            left: -2vw;
-                            "
+                            style="display: block; height: 488px; width: 100%"
                             >
                             <span class="text-left WidgetTitleSmall" style="font-size: 24px"
                                   >Session List</span
                             ><!-- Start: Table Headings -->
                             <div class="table-headings">
                                 <!-- Start: Patient Name Wrap -->
-                                <div class="patient-name"></div>
+                                <div class="patient-name">
+                                    <span
+                                        class="text-left WidgetTitleSmall"
+                                        style="font-size: 19px"
+                                        >Doctor ID</span
+                                    >
+                                </div>
                                 <!-- End: Patient Name Wrap -->
                                 <!-- Start: Doctor Name Wrap -->
                                 <div class="doctor-name">
@@ -298,9 +364,14 @@
                                                             >
                                                             <img
                                                                 class="img-fluid icon-position"
-                                                                src="assets/img/appointment%20-%20patient.svg"
+                                                                src="../assets/img/appointment%20-%20patient.svg"
                                                                 />
                                                         </div>
+                                                        <!-- Start: D-id -->
+                                                        <div class="p-name-lbl">
+                                                            <span style="font-size: 14px">1021543</span>
+                                                        </div>
+                                                        <!-- End: D-id -->
                                                         <!-- Start: d-name-lbl -->
                                                         <div class="d-name-lbl">
                                                             <span style="font-size: 14px"
@@ -338,9 +409,14 @@
                                                             >
                                                             <img
                                                                 class="img-fluid icon-position"
-                                                                src="assets/img/appointment%20-%20patient.svg"
+                                                                src="../assets/img/appointment%20-%20patient.svg"
                                                                 />
                                                         </div>
+                                                        <!-- Start: D-id -->
+                                                        <div class="p-name-lbl">
+                                                            <span style="font-size: 14px">1021543</span>
+                                                        </div>
+                                                        <!-- End: D-id -->
                                                         <!-- Start: d-name-lbl -->
                                                         <div class="d-name-lbl">
                                                             <span style="font-size: 14px"
@@ -378,9 +454,14 @@
                                                             >
                                                             <img
                                                                 class="img-fluid icon-position"
-                                                                src="assets/img/appointment%20-%20patient.svg"
+                                                                src="../assets/img/appointment%20-%20patient.svg"
                                                                 />
                                                         </div>
+                                                        <!-- Start: D-id -->
+                                                        <div class="p-name-lbl">
+                                                            <span style="font-size: 14px">1021543</span>
+                                                        </div>
+                                                        <!-- End: D-id -->
                                                         <!-- Start: d-name-lbl -->
                                                         <div class="d-name-lbl">
                                                             <span style="font-size: 14px"
@@ -418,9 +499,14 @@
                                                             >
                                                             <img
                                                                 class="img-fluid icon-position"
-                                                                src="assets/img/appointment%20-%20patient.svg"
+                                                                src="../assets/img/appointment%20-%20patient.svg"
                                                                 />
                                                         </div>
+                                                        <!-- Start: D-id -->
+                                                        <div class="p-name-lbl">
+                                                            <span style="font-size: 14px">1021543</span>
+                                                        </div>
+                                                        <!-- End: D-id -->
                                                         <!-- Start: d-name-lbl -->
                                                         <div class="d-name-lbl">
                                                             <span style="font-size: 14px"
@@ -458,9 +544,14 @@
                                                             >
                                                             <img
                                                                 class="img-fluid icon-position"
-                                                                src="assets/img/appointment%20-%20patient.svg"
+                                                                src="../assets/img/appointment%20-%20patient.svg"
                                                                 />
                                                         </div>
+                                                        <!-- Start: D-id -->
+                                                        <div class="p-name-lbl">
+                                                            <span style="font-size: 14px">1021543</span>
+                                                        </div>
+                                                        <!-- End: D-id -->
                                                         <!-- Start: d-name-lbl -->
                                                         <div class="d-name-lbl">
                                                             <span style="font-size: 14px"
@@ -498,9 +589,14 @@
                                                             >
                                                             <img
                                                                 class="img-fluid icon-position"
-                                                                src="assets/img/appointment%20-%20patient.svg"
+                                                                src="../assets/img/appointment%20-%20patient.svg"
                                                                 />
                                                         </div>
+                                                        <!-- Start: D-id -->
+                                                        <div class="p-name-lbl">
+                                                            <span style="font-size: 14px">1021543</span>
+                                                        </div>
+                                                        <!-- End: D-id -->
                                                         <!-- Start: d-name-lbl -->
                                                         <div class="d-name-lbl">
                                                             <span style="font-size: 14px"
@@ -538,9 +634,14 @@
                                                             >
                                                             <img
                                                                 class="img-fluid icon-position"
-                                                                src="assets/img/appointment%20-%20patient.svg"
+                                                                src="../assets/img/appointment%20-%20patient.svg"
                                                                 />
                                                         </div>
+                                                        <!-- Start: D-id -->
+                                                        <div class="p-name-lbl">
+                                                            <span style="font-size: 14px">1021543</span>
+                                                        </div>
+                                                        <!-- End: D-id -->
                                                         <!-- Start: d-name-lbl -->
                                                         <div class="d-name-lbl">
                                                             <span style="font-size: 14px"
@@ -581,16 +682,50 @@
                                 >
                                 <span>Show All</span>
                             </div>
+                            <div class="row">
+                                <div class="col offset-10">
+                                    <!-- Start: Button contain -->
+                                    <div class="btn-contain">
+
+                                        <a href="SessionDirectory.jsp" style="text-decoration:none;">
+                                            <!-- Start: Back btn -->
+                                            <div class="session-back-btn">
+                                                <button
+                                                    class="btn btn-primary back-btn-session"
+                                                    type="button"
+                                                    >
+                                                    Back
+                                                </button>
+                                            </div>
+                                        </a>
+
+                                        <!-- End: Back btn -->
+
+                                        <a href="SessionDirectory.jsp" style="text-decoration:none;">
+                                            <!-- Start: Schedule a Session btn -->
+                                            <div>
+                                                <button
+                                                    class="btn btn-primary schedule-btn"
+                                                    type="button"
+                                                    >
+                                                    Schedule a Session
+                                                </button>
+                                            </div>
+                                            <!-- End: Schedule a Session btn -->
+
+                                        </a>
+                                    </div>
+                                    <!-- End: Button contain -->
+                                </div>
+                            </div>
                         </div>
-                        <!-- End: Session List -->
                     </div>
-                    <!-- End: 1 Row 2 Columns -->
                 </div>
             </div>
         </section>
         <!-- End: Side Navigation + Page -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
         <script>
             var interval = setInterval(UpdateTime, 1000);
 
