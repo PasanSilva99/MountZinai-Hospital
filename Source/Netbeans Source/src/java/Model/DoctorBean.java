@@ -136,5 +136,27 @@ public class DoctorBean {
     public void setPassword(String Password) {
         this.Password = Password;
     }
+
+    public DoctorBean(String NIC, String DocID, String FullName, String NameWithInitials, String AddressL1, String AddressL2, String City, String PostalCode, String ContactNumber, String Email, String Gender, String Qualifications, String Specialization, String Password) {
+        this.NIC = NIC;
+        this.DocID = DocID;
+        this.FullName = FullName;
+        this.NameWithInitials = NameWithInitials;
+        this.AddressL1 = AddressL1;
+        this.AddressL2 = AddressL2;
+        this.City = City;
+        this.PostalCode = PostalCode;
+        this.ContactNumber = ContactNumber;
+        this.Email = Email;
+        this.Gender = Gender;
+        this.Qualifications = Qualifications;
+        this.Specialization = Specialization;
+        this.Password = Password;
+    }
+
+    public DoctorBean() {
+    }
+    
+    
     
 }
