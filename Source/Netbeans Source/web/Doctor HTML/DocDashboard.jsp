@@ -1,6 +1,6 @@
 <%-- 
     Document   : Dashbord
-    Created on : May 12, 2021, 9:13:55 AM
+    Created on : April 10, 2021, 9:13:55 AM
     Author     : Sandhara
 --%>
 
@@ -46,7 +46,7 @@
         </div>
     </section>
     <!-- Start: Side Navigation + Page -->
-    <section class="pagecont">
+    <section class="pagecont mt-5">
         <div class="fillPage">
             <div id="sideNav">
                 <div class="navItem">
