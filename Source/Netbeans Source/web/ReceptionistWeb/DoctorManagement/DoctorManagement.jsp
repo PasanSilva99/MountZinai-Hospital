@@ -118,7 +118,6 @@
         <section class="pagecont">
             <div class="fillPage">
                 <div id="sideNav">
-
                     <!--Side Navigation - Dashboard Section-->
                     <a href="../Dashboard.jsp" style="text-decoration: none">
                         <div class="navItem">
@@ -150,7 +149,10 @@
                     </a>
 
                     <!--Side Navigation - Appointment Management Section-->
-                    <a href="../AppointmentManagement/AppointmentManagement.jsp" style="text-decoration: none"> 
+                    <a
+                        href="../AppointmentManagement/AppointmentManagement.jsp"
+                        style="text-decoration: none"
+                        >
                         <div class="navItem">
                             <div
                                 class="NavItemBg-nonActive"
@@ -181,7 +183,10 @@
                     </a>
 
                     <!--Side Navigation - Patient Management Section-->
-                    <a href="../PatientManagement/PatientManagement.jsp" style="text-decoration: none">
+                    <a
+                        href="../PatientManagement/PatientManagement.jsp"
+                        style="text-decoration: none"
+                        >
                         <div class="navItem">
                             <div style="position: absolute; width: 100%; height: 100%">
                                 <div
@@ -214,7 +219,10 @@
                     </a>
 
                     <!--Side Navigation - Admit Patient Section-->
-                    <a href="../AdmitPatient/AdmitPatient.jsp" style="text-decoration: none">
+                    <a
+                        href="../AdmitPatient/AdmitPatient.jsp"
+                        style="text-decoration: none"
+                        >
                         <div class="navItem">
                             <div style="position: absolute; width: 100%; height: 100%">
                                 <div
@@ -247,7 +255,10 @@
                     </a>
 
                     <!--Side Navigation - Doctor Management Section-->
-                    <a href="../DoctorManagement/DoctorManagement.jsp" style="text-decoration: none">
+                    <a
+                        href="../DoctorManagement/DoctorManagement.jsp"
+                        style="text-decoration: none"
+                        >
                         <div class="navItem">
                             <div style="position: absolute; width: 100%; height: 100%">
                                 <div
@@ -280,7 +291,10 @@
                     </a>
 
                     <!--Side Navigation - Medical Reports Section-->
-                    <a href="../MedicalReports/MedicalReports.jsp" style="text-decoration: none">
+                    <a
+                        href="../MedicalReports/MedicalReports.jsp"
+                        style="text-decoration: none"
+                        >
                         <div class="navItem">
                             <div style="position: absolute; width: 100%; height: 100%">
                                 <div
@@ -311,7 +325,6 @@
                             >
                         </div>
                     </a>
-
                 </div>
                 <div id="page">
                     <div class="container-fluid d-inline-flex container-size">
@@ -403,18 +416,21 @@
                                     3px 1px 6px rgb(124, 129, 135);
                                     "
                                     >
-                                    <!-- Start: Session -->
-                                    <div class="session-text">
-                                        <span
-                                            style="
-                                            font-size: 57px;
-                                            color: rgb(255, 255, 255);
-                                            text-align: left;
-                                            "
-                                            >SESSION</span
-                                        >
-                                    </div>
-                                    <!-- End: Session -->
+
+                                    <a href="SessionDirectory.jsp" style="text-decoration:none;">
+                                        <!-- Start: Session -->
+                                        <div class="session-text">
+                                            <span
+                                                style="
+                                                font-size: 57px;
+                                                color: rgb(255, 255, 255);
+                                                text-align: left;
+                                                "
+                                                >SESSION</span
+                                            >
+                                        </div>
+                                        <!-- End: Session -->
+                                    </a>
                                     <!-- Start: Directory -->
                                     <div class="directory-lbl">
                                         <span
@@ -435,51 +451,55 @@
                                     <!-- End: Session Directoty Icon -->
                                 </div>
                                 <!-- End: Session Directory -->
-                                <!-- Start: All Doctors -->
-                                <div
-                                    class="all-doctors"
-                                    style="
-                                    background: linear-gradient(
-                                    24deg,
-                                    rgb(47, 148, 252) 23%,
-                                    rgb(142, 223, 249) 100%
-                                    );
-                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                    3px 1px 6px rgb(124, 129, 135);
-                                    "
-                                    >
-                                    <!-- Start: All -->
-                                    <div class="all-text-doc">
-                                        <span
-                                            style="
-                                            font-size: 57px;
-                                            color: rgb(255, 255, 255);
-                                            text-align: left;
-                                            "
-                                            >ALL</span
+
+                                <a href="AllDoctors.jsp" style="text-decoration:none;">
+                                    <!-- Start: All Doctors -->
+                                    <div
+                                        class="all-doctors"
+                                        style="
+                                        background: linear-gradient(
+                                        24deg,
+                                        rgb(47, 148, 252) 23%,
+                                        rgb(142, 223, 249) 100%
+                                        );
+                                        box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                        3px 1px 6px rgb(124, 129, 135);
+                                        "
                                         >
+                                        <!-- Start: All -->
+                                        <div class="all-text-doc">
+                                            <span
+                                                style="
+                                                font-size: 57px;
+                                                color: rgb(255, 255, 255);
+                                                text-align: left;
+                                                "
+                                                >ALL</span
+                                            >
+                                        </div>
+                                        <!-- End: All -->
+                                        <!-- Start: Doctors -->
+                                        <div class="doctors-lbl">
+                                            <span
+                                                class="text-uppercase"
+                                                style="color: rgb(255, 255, 255); font-size: 30px"
+                                                >DOCTORS</span
+                                            >
+                                        </div>
+                                        <!-- End: Doctors -->
+                                        <!-- Start: All Doctors Icon -->
+                                        <div>
+                                            <img
+                                                class="all-doctos-icon"
+                                                src="../assets/img/doctor%20group.svg"
+                                                style="filter: invert(100%)"
+                                                />
+                                        </div>
+                                        <!-- End: All Doctors Icon -->
                                     </div>
-                                    <!-- End: All -->
-                                    <!-- Start: Doctors -->
-                                    <div class="doctors-lbl">
-                                        <span
-                                            class="text-uppercase"
-                                            style="color: rgb(255, 255, 255); font-size: 30px"
-                                            >DOCTORS</span
-                                        >
-                                    </div>
-                                    <!-- End: Doctors -->
-                                    <!-- Start: All Doctors Icon -->
-                                    <div>
-                                        <img
-                                            class="all-doctos-icon"
-                                            src="../assets/img/doctor%20group.svg"
-                                            style="filter: invert(100%)"
-                                            />
-                                    </div>
-                                    <!-- End: All Doctors Icon -->
-                                </div>
-                                <!-- End: All Doctors -->
+                                    <!-- End: All Doctors -->
+                                </a>
+
                             </div>
                         </div>
                         <div class="col-xl-5">
