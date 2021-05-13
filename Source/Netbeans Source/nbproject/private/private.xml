@@ -3,12 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/Common.java</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DoctorBean.java</file>
-            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DBConString.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/AdminWeb/DoctorView.jsp</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/RemoveDoctorServlet.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/AdminWeb/ProfileInformation.jsp</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/AdminWeb/AddDoctor.jsp</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/Doctor%20HTML/DocAddDocument.jsp</file>
-            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DBCon.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/AddDoctorServlet.java</file>
             <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/DoctorFunctions.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/UpdateDoctorServlet.java</file>
+            <file>file:/C:/Users/pasan/OneDrive/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/build/generated/src/org/apache/jsp/AdminWeb/DoctorView_jsp.java</file>
         </group>
     </open-files>
 </project-private>

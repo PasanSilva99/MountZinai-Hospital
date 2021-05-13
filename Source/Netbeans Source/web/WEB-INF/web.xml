@@ -8,6 +8,14 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>Controller.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UpdateDoctorServlet</servlet-name>
+        <servlet-class>Controller.UpdateDoctorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveDoctorServlet</servlet-name>
+        <servlet-class>Controller.RemoveDoctorServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddDoctorServlet</servlet-name>
         <url-pattern>/AddDoctorServlet</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateDoctorServlet</servlet-name>
+        <url-pattern>/UpdateDoctorServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveDoctorServlet</servlet-name>
+        <url-pattern>/RemoveDoctorServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -5,24 +5,20 @@
  */
 package Controller;
 
+import Model.DoctorFunctions;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import Model.DBCon;
-import Controller.Common;
-import Model.DoctorBean;
-import Model.DoctorFunctions;
 
 /**
  *
  * @author pasan
  */
-public class AddDoctorServlet extends HttpServlet {
+public class RemoveDoctorServlet extends HttpServlet {
 
-    Common func = new Common();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -40,10 +36,10 @@ public class AddDoctorServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet AddDoctorServlet</title>");            
+            out.println("<title>Servlet RemoveDoctorServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet AddDoctorServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet RemoveDoctorServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -62,8 +58,6 @@ public class AddDoctorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        
-        
     }
 
     /**
@@ -77,55 +71,11 @@ public class AddDoctorServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
-        
-        PrintWriter out=response.getWriter();
-        
-        
-        String Salutation = request.getParameter("Salutation");
-        String FullName = request.getParameter("txt_FullName");
-        String NameWithInitials = request.getParameter("txt_NameWithInit");
-        String Gender = request.getParameter("sel_Gender");
-        String DocRegNum = request.getParameter("txt_DocRegNum");
-        String NIC = request.getParameter("txt_NIC");
-        String ContactNumber = request.getParameter("txt_ContactNumber");
-        String Email = request.getParameter("txt_Email");
-        String AddressL1 = request.getParameter("txt_AddressL1");
-        String AddressL2 = request.getParameter("txt_AddressL2");
-        String City = request.getParameter("txt_City");
-        String PostalCode = request.getParameter("txt_PostalCode");
-        String Qualifications = request.getParameter("txt_Qualifications");
-        String Specialization = request.getParameter("sel_Specialization");
-        String Password = func.GetHash(request.getParameter("txt_Password"));
-        
-        
-        DoctorBean Doctor= new DoctorBean(
-                NIC,
-                DocRegNum,
-                Salutation+". "+FullName,
-                NameWithInitials,
-                AddressL1,
-                AddressL2,
-                City,
-                PostalCode,
-                ContactNumber,
-                Email,
-                Gender,
-                Qualifications,
-                Specialization,
-                Password);
+        String DocID = request.getParameter("id");
         
         DoctorFunctions DocFunc = new DoctorFunctions();
+        DocFunc.RemoveDoctor(DocID);
         
-        boolean status = DocFunc.AddDoctor(Doctor);
-        if(status){
-            response.sendRedirect("AdminWeb/DoctorView.jsp");
-            
-        }else{
-            out.println("<script type=\"text/javascript\">");
-            out.println("alert('Server Error! COuld not register Doctor!');");
-            out.println("</script>");
-        }
     }
 
     /**

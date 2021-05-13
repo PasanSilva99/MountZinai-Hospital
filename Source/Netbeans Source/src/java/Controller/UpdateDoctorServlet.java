@@ -5,24 +5,21 @@
  */
 package Controller;
 
+import Model.DoctorBean;
+import Model.DoctorFunctions;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import Model.DBCon;
-import Controller.Common;
-import Model.DoctorBean;
-import Model.DoctorFunctions;
 
 /**
  *
  * @author pasan
  */
-public class AddDoctorServlet extends HttpServlet {
+public class UpdateDoctorServlet extends HttpServlet {
 
-    Common func = new Common();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -40,10 +37,10 @@ public class AddDoctorServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet AddDoctorServlet</title>");            
+            out.println("<title>Servlet UpdateDoctorServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet AddDoctorServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet UpdateDoctorServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -62,8 +59,6 @@ public class AddDoctorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        
-        
     }
 
     /**
@@ -78,9 +73,8 @@ public class AddDoctorServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        
         PrintWriter out=response.getWriter();
-        
+        Common func = new Common();
         
         String Salutation = request.getParameter("Salutation");
         String FullName = request.getParameter("txt_FullName");
@@ -117,7 +111,7 @@ public class AddDoctorServlet extends HttpServlet {
         
         DoctorFunctions DocFunc = new DoctorFunctions();
         
-        boolean status = DocFunc.AddDoctor(Doctor);
+        boolean status = DocFunc.UpdateDoctor(Doctor);
         if(status){
             response.sendRedirect("AdminWeb/DoctorView.jsp");
             

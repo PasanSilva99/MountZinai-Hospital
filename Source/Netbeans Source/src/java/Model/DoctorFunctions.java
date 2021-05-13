@@ -138,15 +138,15 @@ public class DoctorFunctions {
         
     }
     
-    public boolean RemoveDoctor(String NIC)
+    public boolean RemoveDoctor(String DocID)
     {
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "DELETE FROM doctor WHERE NIC =?";
+            String sql = "DELETE FROM doctor WHERE DocID =?";
             PreparedStatement AddDoc = con.prepareStatement(sql);
-            AddDoc.setString(1, NIC);
+            AddDoc.setString(1, DocID);
             
             int state = AddDoc.executeUpdate();
             
@@ -227,15 +227,15 @@ public class DoctorFunctions {
         return null;
     }
     
-    public DoctorBean FindDoctor(String NIC)
+    public DoctorBean FindDoctor(String ID)
     {
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "SELECT * FROM doctor WHERE NIC =?";
+            String sql = "SELECT * FROM doctor WHERE DocID =?";
             PreparedStatement FindDoc = con.prepareStatement(sql);
-            FindDoc.setString(1, NIC);
+            FindDoc.setString(1, ID);
             
             ResultSet rs = FindDoc.executeQuery();
             
