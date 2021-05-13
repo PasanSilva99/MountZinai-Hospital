@@ -722,13 +722,15 @@
                                 >
                                 <span>Show All</span>
                             </div>
-                            <div class="row">
-                                <div class="col offset-10">
-                                    <button class="btn btn-primary appointment-btn" type="button">
-                                        Make an Appointment
-                                    </button>
+                            <a href="DoctorChannelView.jsp">
+                                <div class="row">
+                                    <div class="col offset-10">
+                                        <button class="btn btn-primary appointment-btn" type="button">
+                                            Make an Appointment
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
