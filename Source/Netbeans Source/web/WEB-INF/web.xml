@@ -16,6 +16,10 @@
         <servlet-name>RemoveDoctorServlet</servlet-name>
         <servlet-class>Controller.RemoveDoctorServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddSessionServlet</servlet-name>
+        <servlet-class>Controller.AddSessionServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddDoctorServlet</servlet-name>
         <url-pattern>/AddDoctorServlet</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>RemoveDoctorServlet</servlet-name>
         <url-pattern>/RemoveDoctorServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddSessionServlet</servlet-name>
+        <url-pattern>/AddSessionServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
