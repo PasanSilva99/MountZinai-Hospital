@@ -287,228 +287,265 @@
                     </div>
                 </div>
                 <div id="page">
-                    <div class="row">
-                        <div class="col">
-                            <div class="common-div-doc" style="width:55vw; left:16vw; " >
-                                <!-- Start: Input Set Doc -->
-                                <div class="input-set-doc">
-                                    <!-- Start: Doctor Name -->
-                                    <div class="appointment-no-section">
-                                        <!-- Start: Doc Name -->
-                                        <div><label>Doctor ID</label></div>
-                                        <!-- End: Doc Name -->
-                                        <!-- Start: Doc Name Div -->
-                                        <div class="doc-name-div">
-                                            <!-- Start: Appoint No. Icon -->
-                                            <div class="doc-name-icon">
-                                                <img
-                                                    src="../assets/img/doctor.svg"
-                                                    style="width: 2rem"
+
+                    <!--Check from here!!!!!! -->
+                    <form action="../../AddSessionServlet" method="post">
+                        <div class="row">
+                            <div class="col">
+                                <div class="common-div-doc" style="width:55vw; left:16vw; " >
+                                    <!-- Start: Input Set Doc -->
+                                    <div class="input-set-doc">
+                                        <!-- Start: Doctor Name -->
+                                        <div class="appointment-no-section">
+                                            <!-- Start: Doc Name -->
+                                            <div><label>Doctor ID</label></div>
+                                            <!-- End: Doc Name -->
+                                            <!-- Start: Doc Name Div -->
+                                            <div class="doc-name-div">
+                                                <!-- Start: Appoint No. Icon -->
+                                                <div class="doc-name-icon">
+                                                    <img
+                                                        src="../assets/img/doctor.svg"
+                                                        style="width: 2rem"
+                                                        />
+                                                </div>
+                                                <!-- End: Appoint No. Icon --><input
+                                                    class="form-control-lg doc-name-input"
+                                                    type="text"
+                                                    placeholder="1020456"
+                                                    name="docID"
+                                                    required=""
                                                     />
                                             </div>
-                                            <!-- End: Appoint No. Icon --><input
-                                                class="form-control-lg doc-name-input"
-                                                type="text"
-                                                placeholder="1020456"
-                                                />
+                                            <!-- End: Doc Name Div -->
                                         </div>
-                                        <!-- End: Doc Name Div -->
-                                    </div>
-                                    <!-- End: Doctor Name -->
-                                    <!-- Start: Session Date -->
-                                    <div class="patient-name-section" >
-                                        <!-- Start: Specialization lbl -->
-                                        <div><label>Pick a Session Date</label></div>
-                                        <!-- End: Specialization lbl -->
-                                        <!-- Start: Specialization Div -->
-                                        <div class="appointment-no-div">
-                                            <!-- Start: Specialization Icon -->
-                                            <div class="appointment-no-icon">
-                                                <input
-                                                    class="form-control-lg session-date-doc"
-                                                    type="date"
-                                                    />
+                                        <!-- End: Doctor Name -->
+                                        <!-- Start: Session Date -->
+                                        <div class="patient-name-section" >
+                                            <!-- Start: Specialization lbl -->
+                                            <div><label>Pick a Session Date</label></div>
+                                            <!-- End: Specialization lbl -->
+                                            <!-- Start: Specialization Div -->
+                                            <div class="appointment-no-div">
+                                                <!-- Start: Specialization Icon -->
+                                                <div class="appointment-no-icon">
+                                                    <input
+                                                        class="form-control-lg session-date-doc"
+                                                        type="date"
+                                                        name="sessionDate"
+                                                        />
+                                                </div>
+                                                <!-- End: Specialization Icon -->
                                             </div>
-                                            <!-- End: Specialization Icon -->
+                                            <!-- End: Specialization Div -->
                                         </div>
-                                        <!-- End: Specialization Div -->
-                                    </div>
-                                    <!-- End: Session Date -->
-                                    <!-- Start: Pick A Date -->
-                                    <div class="doctor-name-section" style=" left: 30vw; top: -13vh;">
-                                        <!-- Start: Pick A Date lbl -->
-                                        <div><label>Session Start Time</label></div>
-                                        <!-- End: Pick A Date lbl -->
-                                        <!-- Start: Pick A Date Div -->
-                                        <div class="appointment-no-div">
-                                            <!-- Start: Pick A Date Icon -->
-                                            <div class="appointment-no-icon">
-                                                <input
-                                                    class="form-control-lg session-time-doc"
-                                                    type="time"
-                                                    />
+                                        <!-- End: Session Date -->
+                                        <!-- Start: Pick A Date -->
+                                        <div class="doctor-name-section" style=" left: 30vw; top: -13vh;">
+                                            <!-- Start: Pick A Date lbl -->
+                                            <div><label>Session Start Time</label></div>
+                                            <!-- End: Pick A Date lbl -->
+                                            <!-- Start: Pick A Date Div -->
+                                            <div class="appointment-no-div">
+                                                <!-- Start: Pick A Date Icon -->
+                                                <div class="appointment-no-icon">
+                                                    <input
+                                                        class="form-control-lg session-time-doc"
+                                                        type="time"
+                                                        name="sessionStart"
+                                                        />
+                                                </div>
+                                                <!-- End: Pick A Date Icon -->
                                             </div>
-                                            <!-- End: Pick A Date Icon -->
+                                            <!-- End: Pick A Date Div -->
                                         </div>
-                                        <!-- End: Pick A Date Div -->
-                                    </div>
-                                    <!-- End: Pick A Date -->
+                                        <!-- End: Pick A Date -->
 
-                                    <!--Select Session End Time-->
+                                        <!--Select Session End Time-->
 
-                                    <div class="doctor-name-section" style=" left: 30vw; top: -9vh;">
-                                        <!-- Start: Pick A Date lbl -->
-                                        <div><label>Session End Time</label></div>
-                                        <!-- End: Pick A Date lbl -->
-                                        <!-- Start: Pick A Date Div -->
-                                        <div class="appointment-no-div">
-                                            <!-- Start: Pick A Date Icon -->
-                                            <div class="appointment-no-icon">
-                                                <input
-                                                    class="form-control-lg session-time-doc"
-                                                    type="time"
-                                                    />
+                                        <div class="doctor-name-section" style=" left: 30vw; top: -9vh;">
+                                            <!-- Start: Pick A Date lbl -->
+                                            <div><label>Session End Time</label></div>
+                                            <!-- End: Pick A Date lbl -->
+                                            <!-- Start: Pick A Date Div -->
+                                            <div class="appointment-no-div">
+                                                <!-- Start: Pick A Date Icon -->
+                                                <div class="appointment-no-icon">
+                                                    <input
+                                                        class="form-control-lg session-time-doc"
+                                                        type="time"
+                                                        name="sessionEnd"
+                                                        />
+                                                </div>
+                                                <!-- End: Pick A Date Icon -->
                                             </div>
-                                            <!-- End: Pick A Date Icon -->
+                                            <!-- End: Pick A Date Div -->
                                         </div>
-                                        <!-- End: Pick A Date Div -->
-                                    </div>
 
-                                    <!--Select Room No:-->
+                                        <!--Select Room No:-->
 
-                                    <!-- Start: ProfileInput -->
-                                    <div class="row" >
-                                        <div
-                                            class="
-                                            d-flex d-xl-flex
-                                            flex-column
-                                            justify-content-xl-start
-                                            align-items-xl-start
-                                            col
-                                            "
-                                            style="left: 5vw; bottom:6vh;"
-                                            >
-                                            <span>Room No</span
-                                            ><select
-                                                class="ProfileInput"
-                                                style="
-                                                width: 20%;
-                                                padding-left: 5px;
-                                                border: 1px solid rgb(176, 176, 176);
-                                                background: #D4D9D3;
-                                                height: 50px;
-                                                width: 20vw;
+                                        <!-- Start: ProfileInput -->
+                                        <div class="row" >
+                                            <div
+                                                class="
+                                                d-flex d-xl-flex
+                                                flex-column
+                                                justify-content-xl-start
+                                                align-items-xl-start
+                                                col
                                                 "
-                                                required=""
+                                                style="left: 5vw; bottom:6vh;"
                                                 >
-                                                <optgroup label="RoomNo" style="border-radius: 10px">
-                                                    <option value="Room1">Room 1</option>
-                                                    <option value="Room2">Room 2</option>
-                                                    <option value="Room3">Room 3</option>
-                                                    <option value="Room4">Room 4</option>
-                                                    <option value="Room5">Room 5</option>
-                                                </optgroup>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- End: ProfileInput -->
-                                    <a href="DoctorManagement.jsp" style="text-decoration:none;">
-                                        <div style="position: relative; left: 10vw; top: -4vh;">
+                                                <span>Room No</span
+                                                ><select
+                                                    name="roomNo"
+                                                    class="ProfileInput"
+                                                    style="
+                                                    width: 20%;
+                                                    padding-left: 5px;
+                                                    border: 1px solid rgb(176, 176, 176);
+                                                    background: #D4D9D3;
+                                                    height: 50px;
+                                                    width: 20vw;
+                                                    "
+                                                    required=""
+                                                    >
+                                                    <optgroup label="RoomNo" style="border-radius: 10px">
+                                                        <option value="Room1">Room 1</option>
+                                                        <option value="Room2">Room 2</option>
+                                                        <option value="Room3">Room 3</option>
+                                                        <option value="Room4">Room 4</option>
+                                                        <option value="Room5">Room 5</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            
+                                            <!--Session Id-->
 
-                                            <button
-                                                class="btn btn-primary back-btn-doc"
-                                                type="button"
-                                                style="font-size: 22px; text-align: center; ">
-                                                Back
-                                            </button>
+                                            <!-- Start: Doctor Name -->
+                                            <div class="appointment-no-section" style="position: relative; top: -5vh; left: -3vw;">
+                                                <!-- Start: Doc Name -->
+                                                <div><label>Session ID</label></div>
+                                                <!-- End: Doc Name -->
+                                                <!-- Start: Doc Name Div -->
+                                                <div class="doc-name-div">
+                                                   
 
+                                                    <!-- End: Appoint No. Icon --><input
+                                                        class="form-control-lg doc-name-input"
+                                                        type="text"
+                                                        placeholder="12"
+                                                        name="sessionID"
+                                                        required=""
+                                                        />
+                                                </div>
+                                                <!-- End: Doc Name Div -->
+                                            </div>
                                         </div>
-                                    </a>
-                                    <div style="position: relative; left: 20vw; top: -10vh;">
+                                        <!-- End: ProfileInput -->
+                                        <a href="DoctorManagement.jsp" style="text-decoration:none;">
+                                            <div style="position: relative; left: 8vw; top: -4vh; ">
+
+                                                <button
+                                                    class="btn btn-primary back-btn-doc"
+                                                    type="button"
+                                                    style="font-size: 22px; text-align: center; height: 6vh; width:6vw; ">
+                                                    Back
+                                                </button>
+
+                                            </div>
+                                        </a>
+                                        <!--Add Button-->
                                         <button
-                                            class="btn btn-primary save-btn-doc"
-                                            type="button"
-                                            style="font-size: 22px; text-align: right">
-                                            Add
+                                            class="
+                                            btn btn-primary
+                                            d-xl-flex
+                                            align-items-xl-center
+                                            btn-done
+                                            "
+                                            type="submit"
+                                            id="btn_add"
+                                            style="background-color: green; top: -8vh; left: -37vw;"
+                                            >
                                             <img
-                                                class="search-icon-doc"
+                                                class="img-fluid imageInvert"
                                                 src="../assets/img/add.svg"
-                                                style="filter: invert(100%)"
+                                                style="width: 20px; height: 20px; margin-right: 5px; height:2vw;"
                                                 />
+                                            Add
                                         </button>
 
                                     </div>
+                                    <!-- End: Input Set Doc -->
+                                    <!-- Start: RightColumn Set -->
 
+                                    <!-- End: RightColumn Set -->
                                 </div>
-                                <!-- End: Input Set Doc -->
-                                <!-- Start: RightColumn Set -->
+                                <!-- Start: Session Directory -->
+                                <div
+                                    class="session-directory-smaill-card"
+                                    style="
+                                    background: linear-gradient(
+                                    24deg,
+                                    rgb(47, 148, 252) 23%,
+                                    rgb(142, 223, 249) 100%
+                                    );
+                                    box-shadow: 3px 1px 6px rgb(124, 129, 135),
+                                    3px 1px 6px rgb(124, 129, 135);
 
-                                <!-- End: RightColumn Set -->
-                            </div>
-                            <!-- Start: Session Directory -->
-                            <div
-                                class="session-directory-smaill-card"
-                                style="
-                                background: linear-gradient(
-                                24deg,
-                                rgb(47, 148, 252) 23%,
-                                rgb(142, 223, 249) 100%
-                                );
-                                box-shadow: 3px 1px 6px rgb(124, 129, 135),
-                                3px 1px 6px rgb(124, 129, 135);
-
-                                "
-                                >
-                                <!-- Start: View -->
-                                <div class="view-txt">
-                                    <span
-                                        style="
-                                        font-size: 44px;
-                                        color: rgb(255, 255, 255);
-                                        text-align: left;
-                                        "
-                                        >VIEW</span
+                                    "
                                     >
-                                </div>
-                                <!-- End: View -->
-                                <!-- Start: Sessions -->
-                                <div class="session-text">
-                                    <span
-                                        class="text-uppercase"
-                                        style="color: rgb(255, 255, 255); font-size: 21px"
-                                        >SESSIONS</span
-                                    >
-                                </div>
-                                <!-- End: Sessions -->
-                                <a href="SessionList.jsp" style="text-decoration:none;">
-                                    <!-- Start: View Session Icon -->
-                                    <div>
-                                        <img
-                                            class="view-session-icon"
-                                            src="../assets/img/stethoscope.svg"
-                                            style="filter: invert(100%)"
-                                            />
+                                    <!-- Start: View -->
+                                    <div class="view-txt">
+                                        <span
+                                            style="
+                                            font-size: 44px;
+                                            color: rgb(255, 255, 255);
+                                            text-align: left;
+                                            "
+                                            >VIEW</span
+                                        >
                                     </div>
-                                    <!-- End: View Session Icon -->
-                                </a>
+                                    <!-- End: View -->
+                                    <!-- Start: Sessions -->
+                                    <div class="session-text">
+                                        <span
+                                            class="text-uppercase"
+                                            style="color: rgb(255, 255, 255); font-size: 21px"
+                                            >SESSIONS</span
+                                        >
+                                    </div>
+                                    <!-- End: Sessions -->
+                                    <a href="SessionList.jsp" style="text-decoration:none;">
+                                        <!-- Start: View Session Icon -->
+                                        <div>
+                                            <img
+                                                class="view-session-icon"
+                                                src="../assets/img/stethoscope.svg"
+                                                style="filter: invert(100%)"
+                                                />
+                                        </div>
+                                        <!-- End: View Session Icon -->
+                                    </a>
+                                </div>
+                                <!-- End: Session Directory -->
                             </div>
-                            <!-- End: Session Directory -->
-                        </div>
-                        <div class="col" style=" right:18vw;">
-                            <!-- Start: Doctor Channel Section -->
-                            <div class="doc-channel" >
-                                <label style="font-size: 31px; color: var(--blue)"
-                                       >SESSION&nbsp;<span style="color: rgb(0, 0, 0)"
-                                                    >DIRECTORY</span
-                                    ></label
-                                ><img
-                                    class="doc-channel-img"
-                                    src="../assets/img/stethoscope.svg"
-                                    />
+                            <div class="col" style=" right:18vw;">
+                                <!-- Start: Doctor Channel Section -->
+                                <div class="doc-channel" >
+                                    <label style="font-size: 31px; color: var(--blue)"
+                                           >SESSION&nbsp;<span style="color: rgb(0, 0, 0)"
+                                                        >DIRECTORY</span
+                                        ></label
+                                    ><img
+                                        class="doc-channel-img"
+                                        src="../assets/img/stethoscope.svg"
+                                        />
+                                </div>
+                                <!-- End: Doctor Channel Section -->
                             </div>
-                            <!-- End: Doctor Channel Section -->
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>

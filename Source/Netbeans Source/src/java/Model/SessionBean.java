@@ -13,11 +13,24 @@ import java.sql.Time;
  * @author pasan
  */
 public class SessionBean {
+    private String SessionID;
     private String DocID;
-    private int RoomNUmber;
-    private Date date;
-    private Time StartTime;
-    private Time EndTime;
+    private String RoomNUmber;
+    private String date;
+    private String StartTime;
+    private String EndTime;
+
+
+    public SessionBean(String DocID, String RoomNUmber, String date, String StartTime, String EndTime,String SessionID) {
+        
+        this.DocID = DocID;
+        this.RoomNUmber = RoomNUmber;
+        this.date = date;
+        this.StartTime = StartTime;
+        this.EndTime = EndTime;
+        this.SessionID = SessionID;
+    }
+
 
     public String getDocID() {
         return DocID;
@@ -27,36 +40,44 @@ public class SessionBean {
         this.DocID = DocID;
     }
 
-    public int getRoomNUmber() {
+    public String getRoomNUmber() {
         return RoomNUmber;
     }
 
-    public void setRoomNUmber(int RoomNUmber) {
+    public void setRoomNUmber(String RoomNUmber) {
         this.RoomNUmber = RoomNUmber;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Time getStartTime() {
+    public String getStartTime() {
         return StartTime;
     }
 
-    public void setStartTime(Time StartTime) {
+    public void setStartTime(String StartTime) {
         this.StartTime = StartTime;
     }
 
-    public Time getEndTime() {
+    public String getEndTime() {
         return EndTime;
     }
 
-    public void setEndTime(Time EndTime) {
+    public void setEndTime(String EndTime) {
         this.EndTime = EndTime;
+    }
+
+    public String getSessionID() {
+        return SessionID;
+    }
+
+    public void setSessionID(String SessionID) {
+        this.SessionID = SessionID;
     }
     
 }

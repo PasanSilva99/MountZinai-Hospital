@@ -12,11 +12,11 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-
-            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/ReceptionistWeb/DoctorManagement/Edit%20Directory.html</file>
-            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/ReceptionistWeb/DoctorManagement/EditDirectory.jsp</file>
-            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/ReceptionistWeb/DoctorManagement/DoctorManagement.jsp</file>
-
+            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/AdminWeb/AddDoctor.jsp</file>
+            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Model/SessionBean.java</file>
+            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/web/ReceptionistWeb/DoctorManagement/SessionDirectory.jsp</file>
+            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/AddSessionServlet.java</file>
+            <file>file:/C:/Users/Sandaru%20D%20Silva/Documents/GitHub/MountZinai-Hospital/Source/Netbeans%20Source/src/java/Controller/AddDoctorServlet.java</file>
         </group>
     </open-files>
 </project-private>
