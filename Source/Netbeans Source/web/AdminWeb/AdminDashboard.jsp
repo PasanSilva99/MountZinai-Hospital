@@ -4,9 +4,12 @@
     Author     : pasan
 --%>
 
+<%@page import="Model.AppointmentFunctions"%>
 <!DOCTYPE html>
 <html lang="en">
 
+    <% AppointmentFunctions AppointFunc = new AppointmentFunctions();%>
+    
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -74,10 +77,10 @@
                             <div style="display: block;height: 100%;">
                                 <div class="row">
                                     <div class="col WidgetTotal hoverWhite">
-                                        <div></div><span class="WidgetTitleSmall">Current Appointments Count<span class="WidgetTitleSmall" style="font-size: 36px;">23187</span></span>
+                                        <div></div><span class="WidgetTitleSmall">Current Appointments Count<span class="WidgetTitleSmall" style="font-size: 36px;"><%=AppointFunc.CountAppointments()%></span></span>
                                     </div>
                                     <div class="col WidgetGray">
-                                        <div></div><span class="WidgetTitleSmall">Completed Appointments Count<span class="WidgetTitleSmall" style="font-size: 32px;">364 / 23187</span></span>
+                                        <div></div><span class="WidgetTitleSmall">Completed Appointments Count<span class="WidgetTitleSmall" style="font-size: 32px;"><%=AppointFunc.CountCompleted() %> / <%=AppointFunc.CountAppointments()%></span></span>
                                         <div class="progress pregressBack" style="margin-top: 11px;height: 10px;">
                                             <div class="progress-bar progress-bar-animated cyanProgress" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="sr-only">20%</span></div>
                                         </div>

@@ -5,22 +5,20 @@
  */
 package Model;
 
-import Model.DoctorBean;
-import Model.DBConString;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author pasan
  */
-public class DoctorFunctions {
+public class StaffFunctions {
     DBConString DB = new DBConString();
 
     public String AuthenticateUser(String Email, String Password)
@@ -29,7 +27,7 @@ public class DoctorFunctions {
         
         try{
             Connection con = DB.CreateConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT Email FROM doctor WHERE Email = ? AND Password = ?");
+            PreparedStatement ps = con.prepareStatement("SELECT Position FROM staff WHERE Email = ? AND Password = ?");
             ps.setString(1, Email);
             ps.setString(2, Password);
             
@@ -37,7 +35,8 @@ public class DoctorFunctions {
             
             validUser = rs.next();
             
-            return validUser?"doctor":null;
+            if(validUser)
+                return validUser?rs.getString(1):null;
         }
         catch (Exception ex){
             java.util.logging.Logger.getLogger(DBConString.class.getName()).log(Level.SEVERE, null, ex);
@@ -46,31 +45,31 @@ public class DoctorFunctions {
         return null;
     }
     
-    public boolean AddDoctor(DoctorBean doctor)
+    public boolean AddStaff(StaffBean staff)
     {
-        DoctorBean Doctor = doctor;
+        StaffBean Staff = staff;
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "INSERT INTO doctor VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-            PreparedStatement AddDoc = con.prepareStatement(sql);
-            AddDoc.setString(1, Doctor.getNIC());
-            AddDoc.setString(2, Doctor.getDocID());
-            AddDoc.setString(3, Doctor.getFullName());
-            AddDoc.setString(4, Doctor.getNameWithInitials());
-            AddDoc.setString(5, Doctor.getAddressL1());
-            AddDoc.setString(6, Doctor.getAddressL2());
-            AddDoc.setString(7, Doctor.getCity());
-            AddDoc.setString(8, Doctor.getPostalCode());
-            AddDoc.setString(9, Doctor.getContactNumber());
-            AddDoc.setString(10, Doctor.getEmail());
-            AddDoc.setString(11, Doctor.getGender());
-            AddDoc.setString(12, Doctor.getQualifications());
-            AddDoc.setString(13, Doctor.getSpecialization());
-            AddDoc.setString(14, Doctor.getPassword());
+            String sql = "INSERT INTO Staff VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            PreparedStatement AddStaff = con.prepareStatement(sql);
+            AddStaff.setString(1, Staff.getNIC());
+            AddStaff.setString(2, Staff.getFullName());
+            AddStaff.setString(3, Staff.getNameWithInitials());
+            AddStaff.setTimestamp(4, Timestamp.valueOf(Staff.getRegistrationDate()));
+            AddStaff.setString(5, Staff.getAddressL1());
+            AddStaff.setString(6, Staff.getAddressL2());
+            AddStaff.setString(7, Staff.getCity());
+            AddStaff.setString(8, Staff.getPostalCode());
+            AddStaff.setString(9, Staff.getContactNumber());
+            AddStaff.setString(10, Staff.getEmail());
+            AddStaff.setString(11, Staff.getGender());
+            AddStaff.setString(12, Staff.getQualifications());
+            AddStaff.setString(13, Staff.getPosition());
+            AddStaff.setString(14, Staff.getPassword());
             
-            int state = AddDoc.executeUpdate();
+            int state = AddStaff.executeUpdate();
             
             return state==1;
             
@@ -93,20 +92,20 @@ public class DoctorFunctions {
         
     }
     
-    public boolean UpdateDoctor(DoctorBean doctor)
+    public boolean UpdateStaff(StaffBean staff)
     {
-        DoctorBean Doctor = doctor;
+        StaffBean Staff = staff;
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
             String sql = ""
                     + "UPDATE "
-                        + "doctor "
+                        + "Staff "
                     + "SET "
-                        + "DocID=?, "
                         + "FullName=?, "
                         + "NameWithInitials=?, "
+                        + "RegistrationDate=?, "
                         + "AddressL1=?, "
                         + "AddressL2=?, "
                         + "City=?, "
@@ -115,30 +114,30 @@ public class DoctorFunctions {
                         + "Email=?, "
                         + "Gender=?, "
                         + "Qualifications=?, "
-                        + "Specialization=?, "
+                        + "Position=?, "
                         + "Password=? "
                     + "WHERE "
                         + "NIC=?)";
             
-            PreparedStatement UpdateDoc = con.prepareStatement(sql);
+            PreparedStatement UpdateStaff = con.prepareStatement(sql);
             
-            UpdateDoc.setString(1, Doctor.getDocID());
-            UpdateDoc.setString(2, Doctor.getFullName());
-            UpdateDoc.setString(3, Doctor.getNameWithInitials());
-            UpdateDoc.setString(4, Doctor.getAddressL1());
-            UpdateDoc.setString(5, Doctor.getAddressL2());
-            UpdateDoc.setString(6, Doctor.getCity());
-            UpdateDoc.setString(7, Doctor.getPostalCode());
-            UpdateDoc.setString(8, Doctor.getContactNumber());
-            UpdateDoc.setString(9, Doctor.getEmail());
-            UpdateDoc.setString(10, Doctor.getGender());
-            UpdateDoc.setString(11, Doctor.getQualifications());
-            UpdateDoc.setString(12, Doctor.getSpecialization());
-            UpdateDoc.setString(13, Doctor.getPassword());
+            UpdateStaff.setString(1, Staff.getFullName());
+            UpdateStaff.setString(2, Staff.getNameWithInitials());
+            UpdateStaff.setTimestamp(3, Timestamp.valueOf(Staff.getRegistrationDate()));
+            UpdateStaff.setString(4, Staff.getAddressL1());
+            UpdateStaff.setString(5, Staff.getAddressL2());
+            UpdateStaff.setString(6, Staff.getCity());
+            UpdateStaff.setString(7, Staff.getPostalCode());
+            UpdateStaff.setString(8, Staff.getContactNumber());
+            UpdateStaff.setString(9, Staff.getEmail());
+            UpdateStaff.setString(10, Staff.getGender());
+            UpdateStaff.setString(11, Staff.getQualifications());
+            UpdateStaff.setString(12, Staff.getPosition());
+            UpdateStaff.setString(13, Staff.getPassword());
             
-            UpdateDoc.setString(14, Doctor.getNIC());
+            UpdateStaff.setString(14, Staff.getNIC());
             
-            int state = UpdateDoc.executeUpdate();
+            int state = UpdateStaff.executeUpdate();
             
             return state==1;
             
@@ -161,17 +160,17 @@ public class DoctorFunctions {
         
     }
     
-    public boolean RemoveDoctor(String DocID)
+    public boolean RemoveStaff(String NIC)
     {
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "DELETE FROM doctor WHERE DocID =?";
-            PreparedStatement AddDoc = con.prepareStatement(sql);
-            AddDoc.setString(1, DocID);
+            String sql = "DELETE FROM Staff WHERE NIC =?";
+            PreparedStatement RemoveStaff = con.prepareStatement(sql);
+            RemoveStaff.setString(1, NIC);
             
-            int state = AddDoc.executeUpdate();
+            int state = RemoveStaff.executeUpdate();
             
             return state==1;
             
@@ -193,25 +192,25 @@ public class DoctorFunctions {
         return false;
     }
     
-    public DoctorBean[] FetchAllDoctors()
+    public StaffBean[] FetchAllStaffs()
     {
-        List<DoctorBean> Doctors = new ArrayList<>();
+        List<StaffBean> Staffs = new ArrayList<>();
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "SELECT * FROM doctor";
-            PreparedStatement FetchDoctors = con.prepareStatement(sql);
+            String sql = "SELECT * FROM Staff";
+            PreparedStatement FetchStaffs = con.prepareStatement(sql);
             
-            ResultSet rs = FetchDoctors.executeQuery();
+            ResultSet rs = FetchStaffs.executeQuery();
             
             while(rs.next())
             {
-                DoctorBean Doctor= new DoctorBean(
+                StaffBean Staff= new StaffBean(
                 rs.getString(1),
                 rs.getString(2),
                 rs.getString(3),
-                rs.getString(4),
+                rs.getTimestamp(4).toLocalDateTime(),
                 rs.getString(5),
                 rs.getString(6),
                 rs.getString(7),
@@ -223,10 +222,10 @@ public class DoctorFunctions {
                 rs.getString(13),
                 rs.getString(14));
                 
-                Doctors.add(Doctor);
+                Staffs.add(Staff);
             }
 
-            return Doctors.toArray(new DoctorBean[Doctors.size()]);
+            return Staffs.toArray(new StaffBean[Staffs.size()]);
         }
         catch (Exception e)
         {
@@ -250,25 +249,25 @@ public class DoctorFunctions {
         return null;
     }
     
-    public DoctorBean FindDoctor(String ID)
+    public StaffBean FindStaff(String NIC)
     {
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "SELECT * FROM doctor WHERE DocID =?";
-            PreparedStatement FindDoc = con.prepareStatement(sql);
-            FindDoc.setString(1, ID);
+            String sql = "SELECT * FROM Staff WHERE NIC =?";
+            PreparedStatement FindStaff = con.prepareStatement(sql);
+            FindStaff.setString(1, NIC);
             
-            ResultSet rs = FindDoc.executeQuery();
+            ResultSet rs = FindStaff.executeQuery();
             
             if(rs.next())
             {
-                DoctorBean Doctor= new DoctorBean(
+                StaffBean Staff= new StaffBean(
                 rs.getString(1),
                 rs.getString(2),
                 rs.getString(3),
-                rs.getString(4),
+                rs.getTimestamp(4).toLocalDateTime(),
                 rs.getString(5),
                 rs.getString(6),
                 rs.getString(7),
@@ -280,7 +279,7 @@ public class DoctorFunctions {
                 rs.getString(13),
                 rs.getString(14));
                 
-                return Doctor;
+                return Staff;
             }
 
             
@@ -302,7 +301,4 @@ public class DoctorFunctions {
         return null;
         
     }
-    
-    
-    
 }

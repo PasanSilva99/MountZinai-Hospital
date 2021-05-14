@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import Model.DBCon;
 import Controller.Common;
 import Model.DBConString;
+import Model.DoctorFunctions;
+import Model.PatientFunctions;
+import Model.StaffFunctions;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -25,6 +28,10 @@ public class LoginServlet extends HttpServlet {
 
     Common common = new Common();
     DBCon connection = new DBCon();
+    
+    StaffFunctions StaffFunc = new StaffFunctions();
+    DoctorFunctions DocFunc = new DoctorFunctions();
+    PatientFunctions PatiFunc = new PatientFunctions();
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -72,18 +79,37 @@ public class LoginServlet extends HttpServlet {
         
         try
         {
-            if (connection!=null)
+            String staff, doctor, patient = "";
+            
+            staff = StaffFunc.AuthenticateUser(email, passwordHash);
+            if(staff!=null)
             {
-                boolean isValidUser = connection.AuthenticateUser(email, passwordHash);
-                if(isValidUser)
+                if(staff.contains("Admin"))
                 {
-                    //out.println(email + " Is Valid. Hooray! 🎉");
-                    writer.println(email + " Is Valid. Hooray! 🎉");
+                    response.sendRedirect("AdminWeb/AdminDashboard.jsp");
                 }
                 else
                 {
-                    //out.println(email + " Is Not Valid. Don't worry, Try again next time. 😒");
-                    writer.println(email + " Is Not Valid. Don't worry, Try again next time. 😒");
+                    response.sendRedirect("ReceptionistWeb/Dashbord.jsp");
+                }
+            }
+            else
+            {
+                doctor = DocFunc.AuthenticateUser(email, passwordHash);
+                if(doctor!=null)
+                {
+                    response.sendRedirect("DoctorWeb/Dashboard.jsp");
+                }
+                else
+                {
+                    patient = PatiFunc.AuthenticateUser(email, passwordHash);
+                    if(patient!=null)
+                    {
+                        response.sendRedirect("PatientWeb/PatientDashboard.jsp");
+                    }
+                    else{
+                        response.sendRedirect("index.html?message=notautherized");
+                    }
                 }
             }
         }

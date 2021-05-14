@@ -4,10 +4,14 @@
     Author     : pasan
 --%>
 
+<%@page import="Model.StaffBean"%>
+<%@page import="Model.StaffFunctions"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
+<% StaffFunctions StaffFunc = new StaffFunctions(); %>
+<% StaffBean[] Staffs = StaffFunc.FetchAllStaffs(); %>
+    
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -73,125 +77,48 @@
                             <div class="col listHeader"><span class="listHeader">Position</span></div>
                             <div class="col-3 listHeader"><span class="listHeader">EmailAddress</span></div>
                             <div class="col listHeader"><span class="listHeader">Contact Number</span></div>
-                            <div class="col listHeader"><span class="listHeader">Staff ID</span></div>
+                            <div class="col listHeader"><span class="listHeader">NIC</span></div>
                         </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem-selected" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
-                        <div class="d-xl-flex align-items-xl-center row FullListItem" style="border-bottom-width: 2px;border-bottom-color: #A6A6A6;padding-bottom: 10px;padding-top: 10px;color: #3B3B3B;margin-top: 10px;">
-                            <div class="col-3"><img alt="" style="width: 30px;height: 30px;margin-right: 5px;margin-top: -5px;" src="assets/img/profile.svg"><span class="listHeader" style="margin-left: 5PX;">L. G. N. N. Kumarasiri</span></div>
-                            <div class="d-flex flex-row align-items-xl-center col listHeader">
-                                <div class="receptionist"></div><span class="listHeader" style="margin-left: 5px;">Receptionist</span>
-                            </div>
-                            <div class="col-3 listHeader"><span class="listHeader">nuwandharanilu@gmail.com</span></div>
-                            <div class="col listHeader"><span class="listHeader">076 568 5330</span></div>
-                            <div class="col listHeader"><span class="listHeader">NNK3526</span></div>
-                        </div>
+                        <!-- Load all Staff in to the list -->
+                        <%
+                    for (int i = 0; i < Staffs.length; i++)
+                    {
+                        String ListItemHTML = ""
+                                + "<div id=\""+ Staffs[i].getNIC() +"\" onClick=\"ListItemClick(this.id);\" class=\"d-xl-flex align-items-xl-center row FullListItem\" style=\""
+                                + "border-bottom-width: 2px;"
+                                + "border-bottom-color: #a6a6a6;"
+                                + "padding-bottom: 10px;"
+                                + "padding-top: 10px;"
+                                + "color: #3b3b3b;"
+                                + "margin-top: 10px;"
+                                + "\">"
+                                + ""
+                                + "<div class=\"col-3\">"
+                                + "<img alt=\" \" style=\""
+                                + "width: 30px;"
+                                + "height: 30px;"
+                                + "margin-right: 5px;"
+                                + "margin-top: -5px;"
+                                + " \" src=\"assets/img/profile.svg\" /><span class=\"listHeader\" style=\"margin-left: 5px"
+                                + "\">"+Staffs[i].getNameWithInitials() 
+                                + " </span> "
+                                + "</div><div class=\"d-flex flex-row align-items-xl-center col listHeader\">  <div class=\"receptionist\"></div>"
+                                + "<span class=\"listHeader\" style=\"margin-left: 5px\">"
+                                + Staffs[i].getPosition() + " </span></div> "
+                                + " <div class=\"col-3 listHeader\" >  <span class=\"listHeader\" >"
+                                + Staffs[i].getEmail()
+                                + " </span></div> "
+                                + "<div class=\"col listHeader\"><span class=\"listHeader\">"
+                                + Staffs[i].getContactNumber()
+                                + "</span></div>"
+                                + "<div class=\"col listHeader\"><span id=\"txt_"+Staffs[i].getNIC()+"\" class=\"listHeader\">"
+                                + Staffs[i].getNIC()
+                                + "</span></div></div> ";
+                        out.print(ListItemHTML);
+                    }
+                        %>
+                    
+                <!-- Load all Staff in to the list -->
                     </div>
                 </div><!-- End: 1 Row 2 Columns -->
             </div>
@@ -274,6 +201,12 @@
             }
         }
     </script>
+    <script>
+          function ListItemClick(clicked_id)
+          {
+              window.location.href = "ProfileInformation.jsp?id="+clicked_id;
+          }
+      </script>
 </body>
 
 </html>
