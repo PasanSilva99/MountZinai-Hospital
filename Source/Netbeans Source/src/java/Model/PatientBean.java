@@ -6,6 +6,7 @@
 package Model;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 /**
  *
@@ -15,7 +16,7 @@ public class PatientBean {
     
     private String NIC;
     private String PID;
-    private Date RegistrationDate;
+    private LocalDateTime RegistrationDate;
     private String FullName;
     private String NameWithInitials;
     private Date DOB;
@@ -25,8 +26,9 @@ public class PatientBean {
     private String PostalCode;
     private String ContactNumber;
     private String Gender;
-    private Float Height;
-    private Float Weight;
+    private Double Height;
+    private Double Weight;
+    private String BloodType="";
     private String OtherDetails;
     private String Email;
     private String Password;
@@ -39,6 +41,8 @@ public class PatientBean {
         this.NIC = NIC;
     }
 
+    
+    
     public String getPID() {
         return PID;
     }
@@ -47,11 +51,11 @@ public class PatientBean {
         this.PID = PID;
     }
 
-    public Date getRegistrationDate() {
+    public LocalDateTime getRegistrationDate() {
         return RegistrationDate;
     }
 
-    public void setRegistrationDate(Date RegistrationDate) {
+    public void setRegistrationDate(LocalDateTime RegistrationDate) {
         this.RegistrationDate = RegistrationDate;
     }
 
@@ -127,19 +131,19 @@ public class PatientBean {
         this.Gender = Gender;
     }
 
-    public Float getHeight() {
+    public Double getHeight() {
         return Height;
     }
 
-    public void setHeight(Float Height) {
+    public void setHeight(Double Height) {
         this.Height = Height;
     }
 
-    public Float getWeight() {
+    public Double getWeight() {
         return Weight;
     }
 
-    public void setWeight(Float Weight) {
+    public void setWeight(Double Weight) {
         this.Weight = Weight;
     }
 
@@ -166,6 +170,38 @@ public class PatientBean {
     public void setPassword(String Password) {
         this.Password = Password;
     }
+
+    public PatientBean(String NIC, String PID, LocalDateTime RegistrationDate, String FullName, String NameWithInitials, Date DOB, String Address1, String Address2, String City, String PostalCode, String ContactNumber, String Gender, Double Height, Double Weight, String OtherDetails, String Email, String Password) {
+        this.NIC = NIC;
+        this.PID = PID;
+        this.RegistrationDate = RegistrationDate;
+        this.FullName = FullName;
+        this.NameWithInitials = NameWithInitials;
+        this.DOB = DOB;
+        this.Address1 = Address1;
+        this.Address2 = Address2;
+        this.City = City;
+        this.PostalCode = PostalCode;
+        this.ContactNumber = ContactNumber;
+        this.Gender = Gender;
+        this.Height = Height;
+        this.Weight = Weight;
+        this.OtherDetails = OtherDetails;
+        this.Email = Email;
+        this.Password = Password;
+    }
+
+    public PatientBean() {
+    }
+
+    public String getBloodType() {
+        return BloodType;
+    }
+
+    public void setBloodType(String BloodType) {
+        this.BloodType = BloodType;
+    }
+    
     
     
 }

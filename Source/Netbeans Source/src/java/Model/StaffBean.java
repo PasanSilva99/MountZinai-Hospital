@@ -27,6 +27,10 @@ public class StaffBean {
     private String Position;
     private String Password;
 
+    StaffBean(String string, String string0, String string1, String string2, String string3, String string4, String string5, String string6, String string7, String string8, String string9, String string10, String string11, String string12) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getNIC() {
         return NIC;
     }
@@ -137,6 +141,26 @@ public class StaffBean {
 
     public void setPassword(String Password) {
         this.Password = Password;
+    }
+
+    public StaffBean(String NIC, String FullName, String NameWithInitials, LocalDateTime RegistrationDate, String AddressL1, String AddressL2, String City, String PostalCode, String ContactNumber, String Email, String Gender, String Qualifications, String Position, String Password) {
+        this.NIC = NIC;
+        this.FullName = FullName;
+        this.NameWithInitials = NameWithInitials;
+        this.RegistrationDate = RegistrationDate;
+        this.AddressL1 = AddressL1;
+        this.AddressL2 = AddressL2;
+        this.City = City;
+        this.PostalCode = PostalCode;
+        this.ContactNumber = ContactNumber;
+        this.Email = Email;
+        this.Gender = Gender;
+        this.Qualifications = Qualifications;
+        this.Position = Position;
+        this.Password = Password;
+    }
+
+    public StaffBean() {
     }
     
     

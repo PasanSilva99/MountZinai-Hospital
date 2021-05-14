@@ -156,7 +156,4 @@ public class DoctorBean {
 
     public DoctorBean() {
     }
-    
-    
-    
 }

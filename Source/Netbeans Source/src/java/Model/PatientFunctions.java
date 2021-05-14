@@ -5,22 +5,22 @@
  */
 package Model;
 
-import Model.DoctorBean;
+import Model.PatientBean;
 import Model.DBConString;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author pasan
  */
-public class DoctorFunctions {
+public class PatientFunctions {
     DBConString DB = new DBConString();
 
     public String AuthenticateUser(String Email, String Password)
@@ -29,7 +29,7 @@ public class DoctorFunctions {
         
         try{
             Connection con = DB.CreateConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT Email FROM doctor WHERE Email = ? AND Password = ?");
+            PreparedStatement ps = con.prepareStatement("SELECT Email FROM patient WHERE Email = ? AND Password = ?");
             ps.setString(1, Email);
             ps.setString(2, Password);
             
@@ -37,7 +37,7 @@ public class DoctorFunctions {
             
             validUser = rs.next();
             
-            return validUser?"doctor":null;
+            return validUser?"patient":null;
         }
         catch (Exception ex){
             java.util.logging.Logger.getLogger(DBConString.class.getName()).log(Level.SEVERE, null, ex);
@@ -46,31 +46,35 @@ public class DoctorFunctions {
         return null;
     }
     
-    public boolean AddDoctor(DoctorBean doctor)
+    public boolean AddPatient(PatientBean patient)
     {
-        DoctorBean Doctor = doctor;
+        PatientBean Patient = patient;
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "INSERT INTO doctor VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-            PreparedStatement AddDoc = con.prepareStatement(sql);
-            AddDoc.setString(1, Doctor.getNIC());
-            AddDoc.setString(2, Doctor.getDocID());
-            AddDoc.setString(3, Doctor.getFullName());
-            AddDoc.setString(4, Doctor.getNameWithInitials());
-            AddDoc.setString(5, Doctor.getAddressL1());
-            AddDoc.setString(6, Doctor.getAddressL2());
-            AddDoc.setString(7, Doctor.getCity());
-            AddDoc.setString(8, Doctor.getPostalCode());
-            AddDoc.setString(9, Doctor.getContactNumber());
-            AddDoc.setString(10, Doctor.getEmail());
-            AddDoc.setString(11, Doctor.getGender());
-            AddDoc.setString(12, Doctor.getQualifications());
-            AddDoc.setString(13, Doctor.getSpecialization());
-            AddDoc.setString(14, Doctor.getPassword());
+            String sql = "INSERT INTO patient VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            PreparedStatement Addpatient = con.prepareStatement(sql);
+            Addpatient.setString(1, Patient.getNIC());
+            Addpatient.setString(2, Patient.getNIC());
+            Addpatient.setTimestamp(3, Timestamp.valueOf(Patient.getRegistrationDate()));
+            Addpatient.setString(4, Patient.getFullName());
+            Addpatient.setString(5, Patient.getNameWithInitials());
+            Addpatient.setDate(6, Patient.getDOB());
+            Addpatient.setString(7, Patient.getAddress1());
+            Addpatient.setString(8, Patient.getAddress2());
+            Addpatient.setString(9, Patient.getCity());
+            Addpatient.setString(10, Patient.getPostalCode());
+            Addpatient.setString(11, Patient.getContactNumber());
+            Addpatient.setString(12, Patient.getGender());
+            Addpatient.setDouble(13, Patient.getHeight());
+            Addpatient.setDouble(14, Patient.getWeight());
+            Addpatient.setString(15, Patient.getBloodType());
+            Addpatient.setString(16, Patient.getOtherDetails());
+            Addpatient.setString(17, Patient.getEmail());
+            Addpatient.setString(18, Patient.getPassword());
             
-            int state = AddDoc.executeUpdate();
+            int state = Addpatient.executeUpdate();
             
             return state==1;
             
@@ -93,18 +97,17 @@ public class DoctorFunctions {
         
     }
     
-    public boolean UpdateDoctor(DoctorBean doctor)
+    /*public boolean UpdatePatient(PatientBean patient)
     {
-        DoctorBean Doctor = doctor;
+        PatientBean Patient = patient;
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
             String sql = ""
                     + "UPDATE "
-                        + "doctor "
+                        + "Patient "
                     + "SET "
-                        + "DocID=?, "
                         + "FullName=?, "
                         + "NameWithInitials=?, "
                         + "AddressL1=?, "
@@ -120,58 +123,25 @@ public class DoctorFunctions {
                     + "WHERE "
                         + "NIC=?)";
             
-            PreparedStatement UpdateDoc = con.prepareStatement(sql);
+            PreparedStatement UpdatePatient = con.prepareStatement(sql);
             
-            UpdateDoc.setString(1, Doctor.getDocID());
-            UpdateDoc.setString(2, Doctor.getFullName());
-            UpdateDoc.setString(3, Doctor.getNameWithInitials());
-            UpdateDoc.setString(4, Doctor.getAddressL1());
-            UpdateDoc.setString(5, Doctor.getAddressL2());
-            UpdateDoc.setString(6, Doctor.getCity());
-            UpdateDoc.setString(7, Doctor.getPostalCode());
-            UpdateDoc.setString(8, Doctor.getContactNumber());
-            UpdateDoc.setString(9, Doctor.getEmail());
-            UpdateDoc.setString(10, Doctor.getGender());
-            UpdateDoc.setString(11, Doctor.getQualifications());
-            UpdateDoc.setString(12, Doctor.getSpecialization());
-            UpdateDoc.setString(13, Doctor.getPassword());
+            UpdatePatient.setString(1, Patient.getDocID());
+            UpdatePatient.setString(2, Patient.getFullName());
+            UpdatePatient.setString(3, Patient.getNameWithInitials());
+            UpdatePatient.setString(4, Patient.getAddressL1());
+            UpdatePatient.setString(5, Patient.getAddressL2());
+            UpdatePatient.setString(6, Patient.getCity());
+            UpdatePatient.setString(7, Patient.getPostalCode());
+            UpdatePatient.setString(8, Patient.getContactNumber());
+            UpdatePatient.setString(9, Patient.getEmail());
+            UpdatePatient.setString(10, Patient.getGender());
+            UpdatePatient.setString(11, Patient.getQualifications());
+            UpdatePatient.setString(12, Patient.getSpecialization());
+            UpdatePatient.setString(13, Patient.getPassword());
             
-            UpdateDoc.setString(14, Doctor.getNIC());
+            UpdatePatient.setString(14, Patient.getNIC());
             
-            int state = UpdateDoc.executeUpdate();
-            
-            return state==1;
-            
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-        finally
-        {
-            try {
-                if(!con.isClosed())
-                con.close();
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
-        }
-        
-        return false;
-        
-    }
-    
-    public boolean RemoveDoctor(String DocID)
-    {
-        Connection con = null;
-        try
-        {
-            con = DB.CreateConnection();
-            String sql = "DELETE FROM doctor WHERE DocID =?";
-            PreparedStatement AddDoc = con.prepareStatement(sql);
-            AddDoc.setString(1, DocID);
-            
-            int state = AddDoc.executeUpdate();
+            int state = UpdatePatient.executeUpdate();
             
             return state==1;
             
@@ -191,42 +161,78 @@ public class DoctorFunctions {
         }
         
         return false;
-    }
+        
+    }*/
     
-    public DoctorBean[] FetchAllDoctors()
+    public boolean RemovePatient(String NIC)
     {
-        List<DoctorBean> Doctors = new ArrayList<>();
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "SELECT * FROM doctor";
-            PreparedStatement FetchDoctors = con.prepareStatement(sql);
+            String sql = "DELETE FROM Patient WHERE NIC =?";
+            PreparedStatement Removepatient = con.prepareStatement(sql);
+            Removepatient.setString(1, NIC);
             
-            ResultSet rs = FetchDoctors.executeQuery();
+            int state = Removepatient.executeUpdate();
+            
+            return state==1;
+            
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            try {
+                if(!con.isClosed())
+                con.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+        
+        return false;
+    }
+    
+    public PatientBean[] FetchAllPatients()
+    {
+        List<PatientBean> Patients = new ArrayList<>();
+        Connection con = null;
+        try
+        {
+            con = DB.CreateConnection();
+            String sql = "SELECT * FROM Patient";
+            PreparedStatement FetchPatients = con.prepareStatement(sql);
+            
+            ResultSet rs = FetchPatients.executeQuery();
             
             while(rs.next())
             {
-                DoctorBean Doctor= new DoctorBean(
+                PatientBean Patient= new PatientBean(
                 rs.getString(1),
                 rs.getString(2),
-                rs.getString(3),
+                rs.getTimestamp(3).toLocalDateTime(),
                 rs.getString(4),
                 rs.getString(5),
-                rs.getString(6),
+                rs.getDate(6),
                 rs.getString(7),
                 rs.getString(8),
                 rs.getString(9),
                 rs.getString(10),
                 rs.getString(11),
                 rs.getString(12),
-                rs.getString(13),
-                rs.getString(14));
+                rs.getDouble(13),
+                rs.getDouble(14),
+                rs.getString(15),
+                rs.getString(17),
+                rs.getString(18));
                 
-                Doctors.add(Doctor);
+                Patients.add(Patient);
             }
 
-            return Doctors.toArray(new DoctorBean[Doctors.size()]);
+            return Patients.toArray(new PatientBean[Patients.size()]);
         }
         catch (Exception e)
         {
@@ -250,37 +256,40 @@ public class DoctorFunctions {
         return null;
     }
     
-    public DoctorBean FindDoctor(String ID)
+    public PatientBean FindPatient(String ID)
     {
         Connection con = null;
         try
         {
             con = DB.CreateConnection();
-            String sql = "SELECT * FROM doctor WHERE DocID =?";
-            PreparedStatement FindDoc = con.prepareStatement(sql);
-            FindDoc.setString(1, ID);
+            String sql = "SELECT * FROM Patient WHERE DocID =?";
+            PreparedStatement Findpatient = con.prepareStatement(sql);
+            Findpatient.setString(1, ID);
             
-            ResultSet rs = FindDoc.executeQuery();
+            ResultSet rs = Findpatient.executeQuery();
             
             if(rs.next())
             {
-                DoctorBean Doctor= new DoctorBean(
+                PatientBean Patient= new PatientBean(
                 rs.getString(1),
                 rs.getString(2),
-                rs.getString(3),
+                rs.getTimestamp(3).toLocalDateTime(),
                 rs.getString(4),
                 rs.getString(5),
-                rs.getString(6),
+                rs.getDate(6),
                 rs.getString(7),
                 rs.getString(8),
                 rs.getString(9),
                 rs.getString(10),
                 rs.getString(11),
                 rs.getString(12),
-                rs.getString(13),
-                rs.getString(14));
+                rs.getDouble(13),
+                rs.getDouble(14),
+                rs.getString(15),
+                rs.getString(17),
+                rs.getString(18));
                 
-                return Doctor;
+                return Patient;
             }
 
             

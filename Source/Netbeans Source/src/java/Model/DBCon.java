@@ -15,24 +15,5 @@ import Model.DBCon;
  */
 public class DBCon extends DBConString{
     
-    public boolean AuthenticateUser(String email, String passwordHash)
-    {
-        boolean validUser = false;
-        
-        try{
-            Connection con = CreateConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT Email FROM Staff WHERE Email = ? AND Password = ?");
-            ps.setString(1, email);
-            ps.setString(2, passwordHash);
-            
-            ResultSet rs = ps.executeQuery();
-            
-            validUser = rs.next();
-        }
-        catch (Exception ex){
-            java.util.logging.Logger.getLogger(DBConString.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        return validUser;
-    }
+    
 }
